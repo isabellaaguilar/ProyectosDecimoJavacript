@@ -34,7 +34,4 @@ if (quiereSuma) {
     var x = multi(10);
     console.log(x);
 }
-
-
-
-//holis
+// otro comentario
