@@ -33,7 +33,7 @@ function dividir() {
 
         dividir = (parseInt(cajaTexto[0].value) + parseInt(cajaTexto[1].value) + parseInt(cajaTexto[2].value)) / 3;
         //aqui estoy haciendo la dividira despues de la caja texto la primera es 0 porque es la primera la segunda es 1  por que es la segunda
-        document.getElementById('resultado').innerHTML = dividir.toFixed(2);;
+        document.getElementById('resultado').innerHTML = dividir.toFixed(1);
         document.getElementById('primero').innerHTML = "el primer valor es " + cajaTexto[0].value;
     }
 }
