@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+<h1>SALARIO X HORA</h1>
+</body>
+
+<script>
+    var horast = prompt("inserte sus horas trabajadas");
+    var horasEnTotal = 0
+    var salarioXhora = prompt("escriba su salario x hora")
+    var horasc = 0
+    var salario= 0
+    var nombre = prompt("escriba su nombre");
+
+    if (horast <= 40){
+        salario=(horast*salarioXhora);
+    }
+    else {
+       
+        horasEnTotal=(horast-40)*2000;
+        horasc= horast-40;
+        salario=((horast-horasc)*salarioXhora)+horasEnTotal;
+
+       
+    }
+    
+    document.write("<br> el salario de " + nombre + " es de "+salario+" y trabajo "+horasc+" horas extra");
+</script>
+
+</html>

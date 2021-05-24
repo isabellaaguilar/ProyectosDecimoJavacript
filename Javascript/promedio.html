@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <script>
+      var nota1 = prompt("digite la nota1"),
+        nota2 = prompt("digite la nota2"),
+        nota3 = prompt("digite la nota3"),
+        suma = 0;
+      prom = 0;
+      if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+        document.write("por favor digite datos numericos");
+      } else {
+        suma = Number(nota1) + Number(nota2) + Number(nota3);
+        prom = suma / 3;
+        prom = prom.toFixed(2);
+        document.write("el promedio es " + prom + "<br>");
+
+        if (prom >= 95) {
+          document.write("el promedio es exelente");
+        } else if (prom >= 80) {
+          document.write("el promedio es muy bueno");
+        } else if (prom >= 70) {
+          document.write("el promedio es bueno");
+        } else if (prom >= 60) {
+          document.write("su condizion es aplazado");
+        } else if (prom >= 50) {
+          document.write("su condizion es quedado");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

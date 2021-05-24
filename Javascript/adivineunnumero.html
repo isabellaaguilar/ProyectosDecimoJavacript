@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivina</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+
+    var a = 23;
+    n = 0;
+    opor = 5;
+    while (n!= a) {
+        n = prompt("digite un numero entre el 1 y 50");
+
+        if (n == a) {
+            alert("felicidades gano");
+
+        }
+        else {
+            opor--;
+            alert("le quedan " + opor + " oportunidades");
+
+        }
+        if (opor == 0) {
+            alert("perdiste");
+            n = 23;
+document.write("el numero era "+a)
+        }
+    }
+
+
+
+</script>
+
+</html>

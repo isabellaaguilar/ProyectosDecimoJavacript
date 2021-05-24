@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contar vocales</title>
+</head>
+<body>
+    
+</body>
+<script>
+let frase="   "
+letras=['a','e','i','o','u','á','é','í','ó','ú'];
+s=0;
+i=0;
+j=0;
+leer();
+function leer(){
+    frase=prompt('escriba una frase');
+frase=frase.toLowerCase();
+valida(frase);
+}
+function valida(cad){
+    while(!isNaN(cad)){
+        cad=prompt("escriba una frase");
+    }
+    document.write("<br>la frase es "+cad);
+    document.write("<br>la cantidad de vocales es "+proceso(cad));
+}
+function proceso(frase){
+for(i=0;i<letras.lenght;i++){
+    for(j=0;j<letras.lenght;j++)
+        if(frase[i]==letras[j]){
+            s++
+        }
+    
+
+
+}
+return s;
+}
+
+
+
+
+</script>
+</html>

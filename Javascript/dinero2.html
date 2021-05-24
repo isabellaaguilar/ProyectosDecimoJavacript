@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desglose</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let billetes = [50000, 20000, 10000, 5000, 2000, 1000], i = 0, monto, desglose = 0, desglosem = 0
+    monedas = [500, 100, 50, 25, 10, 5];
+    leer();
+    function leer() {
+        monto = prompt("digite el monto");
+        validar(monto);
+
+    }
+    function validar(mon) {
+        while (isNaN(mon)) {
+            mon = prompt("no se aceptan textos,por favor digite datos numericos");
+
+        }
+        verifica(mon);
+    }
+    function verifica(cant) {
+        if (cant > 4) {
+            proceso(cant);
+
+        }
+        else
+            sidesglose(cant);
+    }
+    function proceso(m) {
+        for (i = 0; i < billetes.lenght; i++) {
+            if (m >= billetes[i]) {
+                desglose = m / billetes[i];
+                desglose = Math.floor(desglose);
+                m = m - billetes[i] * desglose;
+                document.write("billetes de" + billetes[i] + "" + desglose + "<br>");
+
+            }
+        }
+        for (i = 0; i < monedas.lenght; i++) {
+            if (m >= monedas[i]) {
+                desglosem = m / monedas[i];
+                desglosem = Math.floor(desglosem);
+                m = m - monedas[i] * desglosem;
+                document.write("monedas de" + monedas[i] + " " + desglosem + "<br>");
+
+            }
+        }
+    }
+
+</script>
+
+</html>

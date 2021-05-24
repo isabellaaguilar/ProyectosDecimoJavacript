@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeros aleatorios</title>
+</head>
+<body>
+    
+</body>
+<script>
+let a=0,i=0,num=0;
+personas=new Array(5);
+anaci=new Array(5)
+edades=new Array(5);
+function numeroAleatorio(max,min){
+num=Math.round(Math.random()*(max-min)+min);
+return num;
+
+}
+function solicitar(){
+let nombre=prompt("escriba un nombre");
+return nombre;
+
+}
+function llenarNombres(){
+for(i=0;i<personas.length;i++){
+    personas[i]=solicitar();
+}
+
+    
+    return personas;
+}
+function llenarEdades(){
+    for(i=0;i<edades.length;i++){
+        edades[i]=numeroAleatorio(60,20);
+    }
+    return edades;
+}
+function calcularA(){
+    for(i=0;i<anaci.length;i++){
+        anaci[i]=2021-edades[i];
+    }
+    return anaci;
+}
+function Amayor(){
+    let mayor=anaci[0],pos=0;
+    for(i=0;i<edades.length;i++){
+        if(anaci[i]>=mayor){
+            mayor=anaci[i];
+            pos=i;
+        }
+    }
+    return pos;
+}
+function mostrar(){
+    document.write("las edades son "+llenarEdades()+" <br>");
+    document.write("los nombres son "+llenarNombres()+" <br>");
+    document.write("los años de nacimiento son "+calcularA()+"<br>");
+    document.write("la persona mas joven es "+personas[Amayor()]+"<br> ");
+}
+mostrar();
+</script>
+</html>

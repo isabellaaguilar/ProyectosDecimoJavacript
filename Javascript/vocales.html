@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadenas</title>
+</head>
+<body>
+    <script>
+        var texto = prompt("escriba lo que desee").toLowerCase();
+        var acumuladorA = 0
+        var acumuladorE = 0
+        var acumuladorI = 0
+        var acumuladorO = 0
+        var acumuladorU = 0
+
+       
+
+        for (let j = 0; j < texto.length; j++) {
+            var vocal = texto[j];
+
+            if (vocal == "a" || vocal == "à" || vocal == "à") {
+                acumuladorA++;
+            }
+            if (vocal == "e" || vocal == "é" || vocal == "è") {
+                acumuladorE++;
+            }
+            if (vocal == "i" || vocal == "í" || vocal == "ì") {
+                acumuladorI++;
+            }
+            if (vocal == "o" || vocal == "ó" || vocal == "ò") {
+                acumuladorO++;
+            }
+            if (vocal == "u" || vocal == "ú" || vocal == "ù") {
+                acumuladorU++;
+            }
+        }
+
+        var sumaVocales = Number(acumuladorA) + Number(acumuladorE) + Number(acumuladorI) + Number(acumuladorO) + Number(acumuladorU); //Sumo todos los acumuladores//
+
+        
+
+        document.writeln(`La frase INICIAL es: ${texto} <br>`)
+        document.writeln(`Cantidad letras A: ${acumuladorA} <br>`)
+        document.writeln(`Cantidad letras E: ${acumuladorE} <br>`)
+        document.writeln(`Cantidad letras I: ${acumuladorI} <br>`)
+        document.writeln(`Cantidad letras O: ${acumuladorO} <br>`)
+        document.writeln(`Cantidad letras U: ${acumuladorU} <br>`)
+        document.writeln(`Total de vocales: ${Number(sumaVocales)}`);
+
+    </script>
+
+</body>
+
+</html>

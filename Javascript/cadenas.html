@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadenas</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let frase=" ";
+    cant=0;
+    i=0;
+    s=0;
+    letra=" ";
+    frase=prompt("escriba una frase");
+    cant=frase.length;
+    letra=prompt("escriba la letra de la frase")
+    document.write("la frase es "+frase);
+    document.write("<br> el tamaño de la frase es "+cant);
+    for(i=0;i<frase.length;i++){
+        if(frase[i]==letra){
+            s++;
+        }
+    }
+    document.write("<br>la cantida de letras en la frase es de "+letra+" es de"+s);
+</script>
+</html>

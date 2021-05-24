@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadenas</title>
+</head>
+<body>
+    
+</body>
+<script>
+let pais=" ";
+    cant=0;
+    vecpais=["guatenala","honduras","el salvador","nicaragua","costa rica","panama"];
+    s=0;
+    bandera=false;
+    letra=" ";
+
+    i=0;
+    pais=prompt("escriba un pais de centroamerica");
+    pais=pais.toLocaleLowerCase();
+    pais=pais.replace("á","a");
+    pais=pais.replace("é","e");
+    pais=pais.replace("í","i");
+    pais=pais.replace("ó","o");
+    pais=pais.replace("ú","u");
+for(i=0;i<vecpais.length;i++){
+    if(vecpais[i]==pais){
+bandera=true;
+    }
+}
+if(bandera){
+    document.write("pais de centroamerica correcto");
+
+}
+else
+document.write("<br>no se enconto el pais");
+
+</script>
+</html>

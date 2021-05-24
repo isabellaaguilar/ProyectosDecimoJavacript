@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vector dentro de vector</title>
+</head>
+<body>
+    
+</body>
+<script>
+let arregloCosas=[
+true,
+"Isa",
+1+2,
+['C#','Javascript','C++']
+
+
+];
+// este push es para agregar cosas
+arregloCosas.push(9);
+arregloCosas.push("hola");
+arregloCosas.push(false);
+arregloCosas.push(123);
+arregloCosas.pop();
+//el POP sirve para eliminar el ultimo elemento que tengo en mi vector
+let ultimoElemento=arregloCosas.pop();
+//con esto no elimino el elemento sino que lo quito
+//y se guarda y luego lo puedo volver a poner
+document.write(arregloCosas);
+console.log(ultimoElemento);
+//document.write(arregloCosas[3][1]);
+//                        este 3 es el numero del posicion del vector depende del que se ponga cambia de posicion
+//ese 1 agarra de toso el vector otro vector a dentro en este caso el elemento que este en la posicion 1 del vector
+//recordar que empienza en 0
+</script>
+</html>

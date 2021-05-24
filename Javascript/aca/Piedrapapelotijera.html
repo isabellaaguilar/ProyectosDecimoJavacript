@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <h1>Piedra papel o tijera</h1>
+</body>
+
+<script>
+    var nombre1 = prompt(" Jugador 1 escriba su nombre");
+    var nombre2 = prompt(" jugador 2 escriba su nombre");
+    var a = prompt(" "+nombre1+" escriba piedra ,papel o tijeras");
+    var b = prompt(" "+nombre2+" escriba piedra ,papel o tijeras");
+    a=a.toLowerCase();
+    b=b.toLowerCase();
+
+
+    if (a == "papel" && b == "papel") {
+
+        document.write("empate");
+    }
+    else
+
+        if (a == "piedra" && b == "piedra") {
+
+            document.write("empate");
+
+        }
+        else
+            if (a == "tijeras" && b == "tijeras") {
+
+                document.write("empate");
+            }
+            else
+                if (a == "piedra" && b == "papel") {
+
+                    document.write("gano "+nombre1+"");
+                }
+                else
+                    if (a == "papel" && b == "piedra") {
+
+                        document.write("gano "+nombre2+"");
+                    }
+                    else
+                        if (a == "tijeras" && b == "papel") {
+
+                            document.write("gano "+nombre1+"");
+                        }
+                        else
+                            if (a == "papel" && b == "tijeras") {
+
+                                document.write("gano "+nombre2+"");
+                            }
+                            else
+                                if (a == "piedra" && b == "tijeras") {
+
+                                    document.write("gano "+nombre1+"");
+                                }
+                                else
+                                    if (a == "tijeras" && b == "piedra") {
+
+                                        document.write("gano "+nombre2+"");
+                                    }
+                                    else{
+                                        document.write("porfavor escriba piedra papel o tijera")
+                                    } 
+
+</script>
+
+</html>

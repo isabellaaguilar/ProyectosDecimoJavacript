@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <setting name="gamePath">C:\Users\Alienware\Desktop\R0CK5MI7H\Rocksmith2014.exe</setting>
+  <setting name="GUID1">{0.0.1.00000000}.{082a9eb4-a973-443c-aa4f-b44f4a769c13}</setting>
+  <setting name="GUID2">{0.0.1.00000000}.{082a9eb4-a973-443c-aa4f-b44f4a769c13}</setting>
+  <setting name="isSteam">False</setting>
+  <setting name="manualDev1">False</setting>
+  <setting name="manualDev2">False</setting>
+  <setting name="manualOffcets">False</setting>
+  <setting name="Multiplayer">False</setting>
+  <setting name="offcetPID">012B7E14</setting>
+  <setting name="offcetVID">012B7E0C</setting>
+  <setting name="PID">170D</setting>
+  <setting name="PID2">170D</setting>
+  <setting name="VID">0499</setting>
+  <setting name="VID2">0499</setting>
+</settings>

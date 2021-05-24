@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ 
+</head>
+
+<body>
+    <h1>semaforo</h1>
+
+    <br>
+</body>
+<script>
+    var sema=prompt("escriba el color del semaforo");
+    sema=sema.toLowerCase();
+    if(isNaN(sema)){
+    document.write("<br>"+sema+"<br>");
+    if(sema=="rojo"){
+                document.write("<font color='red'>alto");
+
+            }
+            else
+            if(sema=="amarillo"){
+                document.write("<font color='yellow'>cuidado");
+
+            }
+            else
+            if(sema=="verde"){
+                document.write("<font color='green'>siga");
+
+            }
+        }
+        else
+        document.write("por favor no digite numeros")
+</script>
+
+</html>

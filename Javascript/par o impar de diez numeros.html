@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <script>
+      var i = 0;
+      n = 0;
+      par = 0;
+      impar = 0;
+      document.write("digite 10 numeros");
+      for (i = 1; i <= 10; i++) {
+        var n = prompt("Escriba un  numero");
+
+        if (n % 2 == 0) {
+          par++;
+        } else impar++;
+      }
+      document.write(
+        "la cantidad de pares es " +
+          par +
+          " y la cantidaded de impares es " +
+          impar +
+          ""
+      );
+    </script>
+  </head>
+
+  <body>
+    <br />
+  </body>
+</html>

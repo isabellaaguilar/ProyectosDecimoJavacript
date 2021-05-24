@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    var op, n1, n2, res;
+    acu = 0
+    do {
+        op = parseInt(prompt("digite su opcion 1)sumar  2)restar 3)multiplicar 4)dividir 5)acumulado 6)salir "))
+        switch (op) {
+
+            case 1:
+                n1 = prompt("digite un numero");
+                n2 = prompt("digite un numero");
+                res = Number(n1) + Number(n2)
+                alert("la suma es " + res)
+                acu = acu + res
+                break;
+
+            case 2:
+                n1 = prompt("digite un numero");
+                n2 = prompt("digite un numero");
+                res = Number(n1) - Number(n2)
+                alert("la resta es " + res)
+                acu = acu + res
+                break;
+            case 3:
+                n1 = prompt("digite un numero");
+                n2 = prompt("digite un numero");
+                res = Number(n1) * Number(n2)
+                alert("la multiplicacion es " + res)
+                acu = acu + res
+                break;
+            case 4:
+                n1 = prompt("digite un numero");
+                n2 = prompt("digite un numero");
+                res = Number(n1) / Number(n2)
+                alert("la division es " + res)
+                acu = acu + res
+            case 5:
+                alert("el acumulado es " + acu)
+                break;
+            case 6:
+                alert("gracias por usar nuestro servicio ")
+                break;
+            default:
+                alert("Inserte el numero correctamente")
+                break;
+        } 
+    }while (op != 6);
+
+</script>
+</html>
