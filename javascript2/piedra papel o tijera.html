@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>piedra papel o tijera</title>
+    <style>
+      #color {
+        border: 1px solid;
+        width: 500px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Piedra Tapel o Tijera</h1>
+    <p></p>
+    <p>Valor ingresado</p>
+    <input type="text" id="valorIngresado" />
+    <p></p>
+    <p>valor dado por la maquina</p>
+    <input type="text" readonly id="valorDeMaquina" />
+    <!-- read only para solo leer y no poder editar nada -->
+    <p></p>
+    <button onclick="init()">SUERTE</button>
+    <p></p>
+    <div id="color">
+      <div id="res"></div>
+    </div>
+  </body>
+  <script src="js/piedrapapelotijeras.js"></script>
+</html>
