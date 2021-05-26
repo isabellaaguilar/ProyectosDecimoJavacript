@@ -16,8 +16,10 @@ function vaciar() {
     document.getElementById("res").value = "";
     document.getElementById("color").value = "";
     document.querySelector("#valorIngresado").value = "";
+    document.querySelector("#valorDeMaquina").value = "";
     col.style.background = "white";
     res.innerHTML = "";
+
 }
 
 function aviso(decision, color, contenedorResultado, contenedorColor) {
