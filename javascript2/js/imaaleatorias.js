@@ -4,6 +4,6 @@ let img = document.createElement("img"), //esto crea una etiqueta en este caso l
 
 function buscarImagen() {
     img.src = ` autos/${1}.jpg `;
-    divimagenes.apped(img);
+    divimagenes.append(img);
 
 }
