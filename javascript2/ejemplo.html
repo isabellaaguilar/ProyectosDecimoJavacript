@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        border: 1px solid black;
+      }
+      .imagen {
+        flex: auto;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <h1>Tienda de carros</h1>
+  <body>
+    <div class="box">
+      <img
+        class="imagen"
+        src="imagenes/img1.jpg"
+        alt=""
+        onclick="precio(1200)"
+      />
+      <img
+        class="imagen"
+        src="imagenes/img2.jpg"
+        alt=""
+        onclick="precio(2000)"
+      />
+      <img
+        class="imagen"
+        src="imagenes/img3.jpg"
+        alt=""
+        onclick="precio(3000)"
+      />
+      <img
+        class="imagen"
+        src="imagenes/img4.jpg"
+        alt=""
+        onclick="precio(4000)"
+      />
+      <img
+        class="imagen"
+        src="imagenes/img5.jpg"
+        alt=""
+        onclick="precio(5000)"
+      />
+      <br />
+      <img class="imagen" src="imagenes/carrito.png" onclick="acumulado()" />
+    </div>
+  </body>
+  <script src="js/ejemplo.js"></script>
+</html>
