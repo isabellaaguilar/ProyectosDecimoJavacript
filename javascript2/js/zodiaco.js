@@ -64,7 +64,7 @@ function verifica(mes, dia) {
     } else if (mes == 3 && dia <= 20) {
         aviso("su signo es piscis", "<img src='imagenes3/zodiaco/piscis.jfif' alt=''/>");
     } else {
-        alert("un dia y un mes correcto");
+        alert("digite un dia y un mes correcto");
         vaciar();
         vaciar2()
     }
