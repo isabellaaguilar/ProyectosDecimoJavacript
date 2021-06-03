@@ -1,4 +1,55 @@
 body{
-background-color: peachpuff;
+    background-image: url("../imagenes/edgar.jpg");
+/* background-color: peachpuff; */
+background-repeat: no-repeat ;
+/* para que la imagen no se repita */
+background-size: cover;
+/* para agrandar la imagen */
+}
+/* #para id */
+#principal{
+    font-family: 'Sigmar One', cursive;
+    width: 500px;
+    text-align: center; 
+    margin: 15px auto;
+   
+    /* todo esto esta centrando el titulo */
+    padding: 15px;
+    border: 3px solid red;
+    background-color: antiquewhite;
+    /* este background pinta la cajita que contiene el titulo */
+    /* para la caja que contiene el titulo */
+    border-radius: 100px;
+    /* esto redondea la cajita */
+    box-shadow: blue 1px 15px 100px;
+    /* para dar sombra */
+    transition: transform 1s ease 0.5s;
+    /* para transisiciones */
 
+
+
+}
+fuente{
+font-family: 'Sigmar One', cursive;
+
+ src: link rel="preconnect" href="https://fonts.gstatic.com"
+link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet";
+/* #principal:hover { */
+    /* transform : rotate(360dng) */
+
+}
+
+/* } para hacer rotar */
+/* un . para class */
+.estimolio{
+    background-color: rgb(209, 15, 80);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* tipo de texto */
+    color: aquamarine;
+    width: 250px;
+    height: 50px;
+    margin: 20px auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

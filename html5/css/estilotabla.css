@@ -1,0 +1,26 @@
+body{
+    background-color: blanchedalmond;
+}
+#tabla{
+ border: 4px solid black;
+background-color: #fff;
+color: blue;
+width: 540px;
+
+margin: 15px auto;
+/* margin para centrar la tabla */
+}
+table{
+    border: 3px dashed black;
+    width: 400px;
+    text-align: center;
+    /* para que el color este igual al tama;o de la tabla */
+}
+
+img{
+    height: 100px;
+    width: auto;
+}
+td{
+    border: 4px solid black;
+}
