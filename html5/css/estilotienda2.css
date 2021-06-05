@@ -1,5 +1,5 @@
 body{
-    background-color: blanchedalmond;
+    background-color:black;
 }
 #tabla{
  
@@ -60,6 +60,7 @@ td{
         sans-serif;
       font-size: 30px;
       color: red;
+      text-align: center;
     }
     #imgProductos {
       border: 1px solid black;
