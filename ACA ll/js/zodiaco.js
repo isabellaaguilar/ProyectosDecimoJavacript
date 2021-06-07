@@ -39,7 +39,7 @@ function verifica(mes, dia) {
         aviso("su signo es virgo", "<img src='imagenes3/zodiaco/virgo.jfif' alt=''/>");
     } else if (mes == 9 && dia <= 22) {
         aviso("su signo es virgo", "<img src='imagenes3/zodiaco/virgo.jfif' alt=''/>");
-    } else if (mes == 9 && dia <= 23) {
+    } else if (mes == 9 && dia >= 23) {
         aviso("su signo es libra", "<img src='imagenes3/zodiaco/libra.jfif' alt=''/>");
     } else if (mes == 10 && dia <= 22) {
         aviso("su signo es libra", "<img src='imagenes3/zodiaco/libra.jfif' alt=''/>");

@@ -1,0 +1,67 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.titulo-header {
+    text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 30px;
+
+}
+
+.header-div {
+    margin-bottom: 30px;
+
+    background-color: white;
+    box-shadow: #005 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.boton-desglose {
+    text-align: center;
+    text-transform: uppercase;
+    /* centrar boton y el texto de adentro */
+}
+
+footer {
+    background-color: black;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+.footer {
+    font-size: 25px;
+    color: white;
+}
+
+button:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+
+img:hover{
+     -webkit-transform: rotate(-90deg);
+ -moz-transform: rotate(-90deg);
+ -ms-transform: rotate(-90deg);
+ transform: rotate(-90deg);
+}

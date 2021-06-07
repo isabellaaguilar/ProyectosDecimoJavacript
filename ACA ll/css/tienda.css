@@ -1,0 +1,98 @@
+ body {
+      background-image: url(../imagenes/fondo.jpg);
+      /* fondo */
+    }
+    img {
+        
+      height: 300px;
+      width: 400px;
+      /* cambia todas las imagenes */
+    }
+    .container {
+      display: flex;
+      /* se acomodan las imagenes automaticamente en linea */
+      align-items: center;
+      /* centrs las cosas */
+      flex-wrap: wrap;
+      /* para que la pagina no se extiena y se acomode en los elementos en la siguiente linea */
+    }
+    .autos-box {
+      padding: 60px;
+      /* espacio para centrar a todos los lados */
+      border: 1px solid rgb(219, 208, 208);
+      /* bordes */
+      text-align: center;
+      /* centrar el texto */
+      background-color: black;
+    }
+    .boton-comprar {
+      width: 400px;
+      height: 80px;
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
+      /* mayusculas */
+    }
+    .contener-boton {
+      text-align: center;
+      /* centrar boton y el texto de adentro */
+    }
+    @font-face {
+      font-family: Mifuente;
+      src: url("../fuentes/google1//SigmarOne-Regular.ttf");
+    }
+    .tienda-titulo {
+      font-family: Mifuente;
+        width: 500px;
+    text-align: center; 
+    margin: 15px auto;
+      text-transform: uppercase;
+       padding: 15px;
+       border: 3px solid rgb(219, 208, 208);
+      color: red;
+      /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
+        /* sans-serif; */
+      /* tipo de letra */
+      font-size: 40px;
+      background-color: black;
+    }
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      color: red;
+    }
+    input {
+      font-size: 30px;
+      /* tamaño de letra */
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 30px;
+      color: red;
+    }
+    #imgProductos {
+      border: 1px solid black;
+    }
+    #tabla{
+ border: 4px solid black;
+background-color: #fff;
+color: blue;
+width: 540px;
+
+margin: 15px auto;
+/* margin para centrar la tabla */
+}
+table{
+    border: 3px dashed black;
+    width: 400px;
+    text-align: center;
+    /* para que el color este igual al tama;o de la tabla */
+}
+.footer{
+  text-align: center;
+}
+

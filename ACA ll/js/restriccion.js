@@ -10,9 +10,9 @@ function validar(numeroDePlaca) {
 
     let ultimoDigito = obtenerUltimoValor(numeroDePlaca.trim())
     if (ultimoDigito % 2 == 0) {
-        res.innerHTML = "no puedes circular: lunes, miercoles, viernes, domingo"
+        res.innerHTML = "<p class='texto'>no puedes circular: lunes, miercoles, viernes, domingo</p>";
     } else {
-        res.innerHTML = "no puedes circular el martes,jueves,sabados"
+        res.innerHTML = "<p class='texto'>no puedes circular el martes,jueves,sabados</p>";
     }
 }
 

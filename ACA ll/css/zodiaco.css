@@ -1,0 +1,49 @@
+   h1 {
+      color: white;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+    img {
+      width: 240px;
+      height: auto;
+    }
+    body {
+  
+        background-image: url("../imagenes3/zodiaco/fondo.gif");
+    }
+    .container {
+      text-align: center;
+    }
+      .titulo-header {
+    text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 30px;
+    
+
+  }
+
+  .header-div {
+    margin-bottom: 30px;
+
+    background-color: white;
+    box-shadow: rgb(53, 1, 1) 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: white;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: black;
+  }
+
+  .footer {
+    font-size: 25px;
+    color: black;
+  }

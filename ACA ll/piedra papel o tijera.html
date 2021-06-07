@@ -5,20 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>piedra papel o tijera</title>
-    <style>
-      #color {
-        border: 1px solid;
-        width: 500px;
-        height: 100px;
-      }
-      img {
-        width: 200px;
-        height: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="css/piedrapapelotijera.css" />
   </head>
+  <header>
+    <div class="header-div">
+      <span class="titulo-header">Piedra Papel O tijeras</span>
+    </div>
+  </header>
   <body>
-    <h1>Piedra Tapel o Tijera</h1>
     <p></p>
     <p>Valor ingresado</p>
 
@@ -39,14 +33,25 @@
     />
     <p></p>
     <p>valor dado por la maquina</p>
-    <input type="text" readonly id="valorDeMaquina" />
+    <div class="container">
+      <input type="text" readonly id="valorDeMaquina" />
+    </div>
+    <br />
     <!-- read only para solo leer y no poder editar nada -->
+    <div id="resultadoIMG"></div>
     <p></p>
     <!-- <button onclick="init()">SUERTE</button> -->
     <p></p>
-    <div id="color">
-      <div id="res"></div>
+    <div class="centrar-color">
+      <div id="color">
+        <div id="res"></div>
+      </div>
     </div>
+    <footer>
+      <p class="footer">
+        ACAII Piedra papel o tijeras hecho por Isabella Aguilar Calvo
+      </p>
+    </footer>
   </body>
   <script src="js/piedrapapelotijeras.js"></script>
 </html>

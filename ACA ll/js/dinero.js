@@ -17,7 +17,7 @@ let vecImagenesMonedas = [
 
 
 let res = document.getElementById("res")
-
+let resuladoDesglose = document.getElementById("resultadoDesglose")
 
 
 let billetes = [50000, 20000, 10000, 5000, 2000, 1000],
@@ -67,11 +67,10 @@ function proceso(m) {
             desglose = m / billetes[i];
             desglose = Math.floor(desglose);
             m = m - billetes[i] * desglose;
-            billete5[i].innerHTML =
-                "billetes de" + billetes[i] + "" + desglose + "<br>";
+            resuladoDesglose.innerHTML =
+                resuladoDesglose.innerHTML + "billetes de " + billetes[i] + " " + desglose + "<br>";
             for (let j = 0; j < desglose; j++) {
                 res.innerHTML = res.innerHTML + vecImagenesBilletes[i] + "<br>"
-
             }
         }
     }
@@ -81,15 +80,19 @@ function proceso(m) {
             desglosem = m / monedas[i];
             desglosem = Math.floor(desglosem);
             m = m - monedas[i] * desglosem;
-            monedaS[i].innerHTML =
-                "monedas de" + monedas[i] + " " + desglosem + "<br>";
 
-            for (let j = 0; j < desglose; j++) {
+            resuladoDesglose.innerHTML =
+                resuladoDesglose.innerHTML + "monedas de " + monedas[i] + " " + desglosem + "<br>";
+            for (let j = 0; j < desglosem; j++) {
                 res.innerHTML = res.innerHTML + vecImagenesMonedas[i] + "<br>"
+                // monedaS[i].innerHTML =
+                //     "monedas de " + monedas[i] + " " + desglosem + vecImagenesMonedas[i] + "<br>";
             }
         }
     }
 }
+
+
 
 function sindesglose(m) {
     alert("por favor digite un dato correcto");

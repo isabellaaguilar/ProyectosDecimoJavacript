@@ -1,5 +1,10 @@
 function init(opcion) {
     let nombre = ["piedra", "papel", "tijeras"];
+    let imagen = ["<img src = './imagenes3/piedrapaelotijera/piedra.png' alt = '' />",
+        "<img src = './imagenes3/piedrapaelotijera/papel.jpg' alt = '' />",
+        "<img src = './imagenes3/piedrapaelotijera/tijeras.jpg' alt = '' />"
+    ];
+
     //  let valorIngresado = document.querySelector("#valorIngresado").value;
     res = document.querySelector("#res");
     col = document.querySelector("#color");
@@ -7,6 +12,7 @@ function init(opcion) {
     let num = Math.round(Math.random() * (2 - 0) + 0);
     seleccionRandom = nombre[num];
     document.querySelector("#valorDeMaquina").value = seleccionRandom;
+    document.getElementById("resultadoIMG").innerHTML = imagen[num]
     verificar(opcion, res, col, seleccionRandom, num);
 }
 

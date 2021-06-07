@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda</title>
+  <link rel="stylesheet" href="css/estilotienda2.css" />
+  <div class="header-div">
+    <span class="titulo-header">Tienda de autos</span>
+  </div>
+</head>
+
+<body>
+
+
+  <div class="contener-boton"></div>
+  <div id="tabla">
+    <div class="img">
+      <!-- aling center para centrar las letras en la tabla -->
+      <table cellpadding="5px">
+        <!-- borde para el borde de la tabla -->
+        <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
+        <!-- esto sirve para separar los margenes hacia los lados -->
+        <tr>
+          <td colspan="3px" align="center">Tienda</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/img1.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(0,300000,this)" />
+            <p>Valor: $300000</p>
+          </td>
+
+          <td> <img src="imagenes/img2.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(1,5500000,this)" />
+            <p>Valor: $5500000</p>
+          </td>
+
+
+          <td><img src="imagenes/img3.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(2,656500,this)" />
+            <p>Valor: $656500</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/img4.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(3,8780000,this)" />
+            <p>Valor: $8780000</p>
+          </td>
+
+          <td><img src="imagenes/img5.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(4,34450000,this)" />
+            <p>Valor: $34450000</p>
+          </td>
+          <td><img src="imagenes/img6.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(5,760000,this)" />
+            <p>Valor: $760000</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/img7.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(6,76000,this)" />
+            <p>Valor: $76000</p>
+          </td>
+          <td><img src="imagenes/img8.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+
+            <input type="button" value="Añadir al carrito" onclick="carrito(7,6000,this)" />
+            <p>Valor: $6000</p>
+          </td>
+          <td> <img src="imagenes/img9.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(8,200000,this)" />
+            <p>Valor: $200000</p>
+          </td>
+        </tr>
+        <tr>
+          <td> <img src="imagenes/img10.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(9,300000,this)" />
+            <p>Valor: $300000</p>
+          </td>
+          <td><img src="imagenes/vocho.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(10,400000,this)" />
+            <p>Valor: $400000</p>
+          </td>
+          <td><img src="imagenes/img11.jpg" alt="" width="300px" height="300px" />
+            <p></p>
+            <input type="button" value="Añadir al carrito" onclick="carrito(11,3200000,this)" />
+            <p>Valor: $3200000</p>
+          </td>
+        </tr>
+
+    </div>
+    <tr>
+
+      <!-- right para que el texto esta a la derecha left izquierda -->
+    </tr>
+    </table>
+
+    <br>
+    <div style="margin-top: 60px" class="contener-boton">
+      <button class="boton-comprar" onclick="comprar()">Comprar</button>
+    </div>
+    <div class="contener-boton">
+    <div id="imgProductos"></div>
+    <div id="montoProductos"></div>
+    </div>
+  </div>
+  
+    <br><br><br><br><br><br><br><br><br>
+
+    <footer>
+      <p class="footer">ACAII Tienda de autos hecho por Isabella Aguilar Calvo</p>
+    </footer>
+
+    <!-- li para hacer una lista -->
+</body>
+<script src="js/tienda2.js"></script>
+
+</html>
