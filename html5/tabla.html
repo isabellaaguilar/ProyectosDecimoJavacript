@@ -8,41 +8,92 @@
     <link rel="stylesheet" href="css/estilotabla.css" />
   </head>
   <body>
-    <h1>Tabla de contenidos varios</h1>
+ <h1>Tabla</h1>
+    
+    <div class="contener-boton"></div>
     <div id="tabla">
+       <div class="ima"></div>
         <div class="img">
       <!-- aling center para centrar las letras en la tabla -->
       <table cellpadding="5px">
         <!-- borde para el borde de la tabla -->
         <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
         <!-- esto sirve para separar los margenes hacia los lados -->
+       
         <tr>
-          <td colspan="3px" align="center">Tabla de datos</td>
+          <td colspan="3px" align="center">Tienda</td>
         </tr>
         <tr>
-          <td><img src="imagenes/gallina.png" alt="" /></td>
-          <td><img src="imagenes/cerdo.jpg" alt="" /></td>
-          <td><img src="imagenes/mono.jpg" alt="" /></td>
-        </tr>
-        <tr>
-          <td><img src="imagenes/perro.jpg" alt="" /></td>
-          <td><img src="imagenes/zorro.jpg" alt="" /></td>
-          <td><img src="imagenes/yulien.jpg" alt="" /></td>
-        </tr>
-        <p>esta fuera de la tabla</p>
-</div>
-        <tr>
-          <td colspan="3px" align="right">Pie de tabla</td>
-          <!-- right para que el texto esta a la derecha left izquierda -->
-        </tr>
-      </table>
-    </div>
+          <td><img src="imagenes/gallina.png" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+          onclick="imagen(this)"
+        />
+        <p>gallina</p></td>
 
+          <td> <img src="imagenes/cerdo.jpg" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+            onclick="imagen(this)"
+        />
+        <p>cerdo</p></td>
+
+
+          <td><img src="imagenes/mono.jpg" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+            onclick="imagen(this)"
+        />
+        <p>mono</p></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/perro.jpg" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+            onclick="imagen(this)"
+        />
+        <p>perro</p></td>
+
+          <td><img src="imagenes/zorro.jpg" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+            onclick="imagen(this)"
+        />
+        <p>zorro</p></td>
+            <td><img src="imagenes/yulien.jpg" alt="" width="300px" height="300px" />
+        <p></p>
+        <input
+          type="button"
+          value="ver"
+          name=""
+          
+        />
+        <p>yulien</p></td>
+        </div>
+         
+</table>
+<P></P>
     <ul>
-<li>Manzana</li>
-<li>Uva</li>
-<li>peras</li>
+      <li>Manzana</li>
+      <li>Uva</li>
+      <li>peras</li>
     </ul>
     <!-- li para hacer una lista -->
   </body>
+  <script src="js/tabla.js"></script>
 </html>

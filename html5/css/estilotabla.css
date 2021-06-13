@@ -1,34 +1,56 @@
 body{
-    background-color: blanchedalmond;
+    background-color:rgb(228, 224, 20);
 }
 #tabla{
- border: 4px solid black;
+ 
 background-color: #fff;
-color: blue;
-width: 540px;
+color: black;
+width: 885px;
 
 margin: 15px auto;
 /* margin para centrar la tabla */
 }
-h1{
-
-text-align: center;
-
-}
 table{
-    border: 3px dashed black;
+    border: 3px  black;
     width: 400px;
     text-align: center;
     /* para que el color este igual al tama;o de la tabla */
 }
 
 img{
-    height: 100px;
-    width: auto;
+    height: 150px;
+    width: 270px;
+    padding: 5px;
+border: 2px solid silver;
+border-radius: 20px;
+
 }
+img:hover{
+    box-shadow: #005 4px 2px 2px;
+}
+input:disabled{
+    background: gray;
+    color: white;
+    cursor: not-allowed;
+}
+.imagen2{
+
+    width: 1000px;
+    float: left;
+}
+/* .ima{
+padding: 5px;
+border: 2px solid silver;
+border-radius: 20px;
+} */
+
+/*  */
+
+
+/* 
 td{
     border: 4px solid black;
-}
+} */
 
 /* este td es para las lineas horizontales de las tablas*/
 
