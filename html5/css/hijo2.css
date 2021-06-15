@@ -1,0 +1,30 @@
+p{
+border: 2px solid black;
+background: orange;
+display: block;
+margin: 20px;
+}
+p#fantasma{
+    display: none;
+    /* con esto el texto con el id fantasma desaparece */
+}
+.padre{
+width: 250px;
+height: 2500px;
+margin: 25px;
+background: yellow;
+
+
+}
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    float: left;
+}
+.hijo3{
+height: 50px;
+width: 50px;
+background: blue;
+clear: both;
+}

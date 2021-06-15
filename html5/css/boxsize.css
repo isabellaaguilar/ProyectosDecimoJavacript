@@ -1,5 +1,15 @@
 body{
-    background: linear-gradient(120deg,#d4fc79,#96e6a1 100%);
+    background-image: -webkit-radial-gradient(
+        center,
+        blue 0%,
+        red 30%,
+        green 80%,
+        yellow 100%
+        /* todo esto es para hacer un fondo con colores distorcianados entre si depende del % hay mas o menos distrocion o color */
+    );
+    /* esto para que lo que hicimos no se repita y se muestre una vez */
+    background-attachment: fixed;
+    /* background: linear-gradient(120deg,#d4fc79,#96e6a1 100%); */
     /* esta linea es para distorsionar colores de fondo de mi pagina */
 }
 #contenido{

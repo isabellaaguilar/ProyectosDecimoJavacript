@@ -1,0 +1,32 @@
+.padre{
+    width: 250px;
+    height: 2500px;
+    margin: 25px;
+    background: orange;
+    overflow: hidden;
+    /* el overflow recorta el borde ver la pagina para entender mejor */
+}
+
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+}
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+position: relative;
+display: inline-block;
+/* para que se haga en linea deplegado en bloques */
+top: -25px;
+/* como es negativo se sale de lo naraja ver pagina para entender mejor */
+}
+.transparencia{
+    opacity: 0.2;
+}
+.oculto{
+    visibility: hidden;
+    /* esto lo oculta */
+}
