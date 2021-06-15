@@ -1,0 +1,37 @@
+header{
+    position: fixed;
+    z-index: 100;
+    /* z index es poner algo sobre algo */
+    background: orange;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+div.padre{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+div.hijo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+#pieprincipal{
+    position: fixed;
+    bottom: 0;
+    /* el bottom 0 es para poner el pie de pagina abajo */
+    height: 50px ;
+    width: 100%;
+   background: #555;
+   clear: both;
+   
+}
+/* position relative se puede absoluta en un hijo de donde necesitemos que se acomode en un padel */

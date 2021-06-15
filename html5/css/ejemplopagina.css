@@ -10,6 +10,12 @@ body{
     padding: 0;
 }
 #cabecera{
+    
+    position: relative;
+    z-index: 1000;
+    /* para que se muestre primeor y una imagen no lo sobrepase */
+    bottom: 0;
+    top: 0;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 width: 95%;
 background: whitesmoke;
@@ -22,8 +28,10 @@ color: #2de;
 
 }
 #navega{
+
+   margin-top: 130px;
     background-color: #599978;
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 ul{
@@ -31,6 +39,7 @@ ul{
     list-style: none;
 }
 li{
+    margin: initial;
     display: inline;
 }
 /* para escoger solo un elemento para ponerlos subrayado */
@@ -69,6 +78,10 @@ padding: 15px;
 /* el padding es como para que se acomode y se vea mejor */
 }
 #pieprincipal{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* para que este al final de la pagina */
     text-align: center;
     font-weight: 900;
     /* para el tama;o del texto que esta en el pie de pagina */
