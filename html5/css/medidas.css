@@ -1,0 +1,45 @@
+p.in{
+
+font-size: 1in;
+/* una pulgada */
+
+}
+p.cm{
+    font-size: 1cm;
+/* un centimetro */
+}
+p.mm{
+    font-size: 15mm;
+}
+
+p.pt{
+  font-size: 30pt;
+}
+p.pc{
+
+    font-size: 3pc;
+}
+
+/* medidas relativas */
+p.em{
+    font-size: 1em;
+    /* em tomo el tama;o por defecto al navegador que son 16 px */
+}
+p.ex{
+
+    font-size: 1ex;
+}
+div{
+
+font-size: 32px;
+
+}
+
+/* div p{
+    font-size: ;
+} */
+
+
+div p.rem{
+    font-size: 2rem;
+}

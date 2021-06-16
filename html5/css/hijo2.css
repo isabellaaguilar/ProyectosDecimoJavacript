@@ -22,9 +22,32 @@ background: yellow;
     background: green;
     float: left;
 }
+.hijo1{
+width: 50px;
+height: 50px;
+background: red;
+display: inline-block;
+/* el display block es para que se muestre en linea */
+
+}
+
+
 .hijo3{
 height: 50px;
 width: 50px;
 background: blue;
 clear: both;
+/* clear both para que vaya para abjao */
+}
+
+p.invisible{
+    visibility: hidden;
+    /* esto es para que la p que tiene de nombre la clase invesible no se vea */
+}
+.rojo{
+    color: red !important;
+    /* el imortant para que antes del azul use el rojo */
+}
+.azul{
+    color: blue;
 }
