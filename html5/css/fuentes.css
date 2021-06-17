@@ -1,0 +1,27 @@
+p.text{
+font-size: 2em;
+font-family: courirer;
+font-weight: 900;
+/* font weight es la negrita */
+font-style: italic;
+text-align: justify;
+text-indent: 14px;
+letter-spacing: 2px;
+word-spacing: 7px;
+/* text-decoration: line-through;
+text-transform: lowercase;
+font-variant: small-caps; */
+
+}
+p.text::first-line{
+
+font-size: 30px;
+
+
+}
+p.text::first-letter{
+
+font-size: 40px;
+text-transform: uppercase;
+/* todo esto es el estilo de la primera letra */
+}

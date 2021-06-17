@@ -105,3 +105,8 @@ padding: 15px;
 border: 2px dashed #719443;
 background: rgb(163, 149, 86); ;
 }
+
+header~p{
+    background: purple;
+    /* este header virgurililla p toma todos los p despues del header */
+}

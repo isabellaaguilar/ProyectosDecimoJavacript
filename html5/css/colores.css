@@ -1,0 +1,44 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 20px;
+    /* hacer cajitas con div */
+}
+.reservados{
+
+    background: lime;
+}
+
+.RGB{
+
+background: rgb(255, 90, 255);
+/* el maximo para convinar colores en 255 */
+}
+.HEX{
+
+background: #00ffaa;
+
+}
+
+.hsl{
+
+background: hsl(240,50%,20%);
+
+}
+.porcentual{
+
+background: rgb(50%, 30%, 80%);
+
+}
+.hsl_transaparencia{
+    background: hsla(50,50%, 20%, 0.6);
+}
+
+.rgb_transaparencia{
+    background: rgba(127, 51, 30, 0.1);
+}
+
+
+
+

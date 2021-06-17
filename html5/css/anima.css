@@ -1,0 +1,25 @@
+div{
+
+height: 200px;
+width: 200px;
+background: orange;
+border: 2px solid blue;
+margin: 50px;
+
+}
+
+.aux{
+/* 
+transform: translateY(90px); */
+transform: translateX(90px);
+transition-duration: 3s;
+transition-timing-function: ease;
+transition-delay: 2s;
+/* esto son para transiciones */
+}
+
+.aux:hover{
+
+transform: rotate(90deg)skewX(20deg);
+background: green;
+}

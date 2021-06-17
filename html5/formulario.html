@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <h1>formulario</h1>
+    <form class="" action="index.html" method="POST">
+      <fieldset>
+        <legend>tus datos</legend>
+        <p>
+          <label for="nombre"
+            >nombre:
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              value=""
+              placeholder="escriba su nombre"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label for="apellido"
+            >apellido:
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              value=""
+              placeholder="escriba su apellido"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <radiogroup id="sex">
+            <label for="sexo">
+              <input
+                type="radio"
+                class="sexo"
+                name=""
+                value="hombre"
+                autofocus
+                checked
+              />hombre<br />
+              <input
+                type="radio"
+                class="sexo"
+                name=""
+                value="mujer"
+                autofocus
+                checked
+              />mujer<br />
+              <input
+                type="radio"
+                class="sexo"
+                name=""
+                value="otro"
+                autofocus
+                checked
+              />otro<br />
+            </label>
+          </radiogroup>
+        </p>
+        <p><button type="reset" name="button">reset</button></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

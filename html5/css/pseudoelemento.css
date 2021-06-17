@@ -1,0 +1,19 @@
+div{
+border: 2px solid black;
+width: 50%;
+margin-left: 25%;
+
+}
+
+p::before{
+
+content: "hola";
+margin-left: 15px;
+margin-right: 20px;
+background: red;
+}
+p:after{
+    content: "mundo";
+    margin-left: 15px;
+margin-right: 20px;
+}
