@@ -58,4 +58,27 @@ function formulario() {
     let seleccion = document.getElementById("propuesta").value
     alert(seleccion);
 
+    // obtener cursos
+    let chek = document.getElementsByName("chek")
+    for (i = 0; i < chek.length; i++) {
+        if (chek[i].checked == true) {
+            msj1 = msj1 + ' ' + chek[i].value;
+        }
+    }
+
+    alert(msj1);
+    //obtener el color de la camiseta
+    let color = document.getElementById("color").value;
+    alert(color);
+
+    //obtener calendario
+
+    let calendario = document.querySelector("#fecha1").value
+    alert(calendario);
+
+
+    let contra = document.querySelector("#contra").value
+    alert(contra);
+
+
 }
