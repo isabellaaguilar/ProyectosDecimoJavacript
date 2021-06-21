@@ -1,0 +1,31 @@
+div{
+border: 2px solid black;
+margin: 50%;
+margin-left: 25%;
+
+}
+
+a:link{
+color: green;
+background: black;
+
+}
+a:active{
+color: red;
+background: orange;
+
+
+}
+
+table{
+width: 600px;
+text-align: center;
+border: 1px solid blueviolet;
+margin: auto;
+
+}
+
+td{
+    border: 1px solid black;
+}
+

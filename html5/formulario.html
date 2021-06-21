@@ -12,6 +12,7 @@
       <fieldset>
         <legend>tus datos</legend>
         <p>
+          <!-- nombre -->
           <label for="nombre"
             >nombre:
             <input
@@ -25,6 +26,7 @@
           </label>
         </p>
         <p>
+          <!-- apellido -->
           <label for="apellido"
             >apellido:
             <input
@@ -38,37 +40,141 @@
           </label>
         </p>
         <p>
-          <radiogroup id="sex">
-            <label for="sexo">
-              <input
-                type="radio"
-                class="sexo"
-                name=""
-                value="hombre"
-                autofocus
-                checked
-              />hombre<br />
-              <input
-                type="radio"
-                class="sexo"
-                name=""
-                value="mujer"
-                autofocus
-                checked
-              />mujer<br />
-              <input
-                type="radio"
-                class="sexo"
-                name=""
-                value="otro"
-                autofocus
-                checked
-              />otro<br />
+          <!-- sexo -->
+          <label for="sexo">
+            <input
+              type="radio"
+              class="sexo"
+              name="sexo"
+              value="hombre"
+              autofocus
+              checked
+            />hombre<br />
+            <input
+              type="radio"
+              class="sexo"
+              name="sexo"
+              value="mujer"
+              autofocus
+              checked
+            />mujer<br />
+            <input
+              type="radio"
+              class="sexo"
+              name="sexo"
+              value="otro"
+              autofocus
+              checked
+            />otro<br />
+            <!-- sino utilozo el name me soluciona todas las opciones de mi formulario -->
+          </label>
+          <!-- correo electronico -->
+          <p>
+            <label for="correo">
+            <input type="email" name="correo" id="correo" placeholder="tucorreo@dominio.com" 
+            validate=true required >
+          
             </label>
-          </radiogroup>
+
+          </p>
+          <!-- sitio web -->
+          <p>
+            <label for="sitio">Tu sitio web
+            <input type="url" name="sitioweb" id="sitioweb" placeholder="http://tusitio.com" 
+            validate=true required >
+          
+            </label>
+
+          </p>
+          <!-- conocimientos previos -->
+          <label for="conocimientos">¿Cuántos sabes de html5?</label>
+          <input type="range" name="puntaje" id="puntaje" min="0" max="10">
+<!-- esto es una barrita -->
         </p>
-        <p><button type="reset" name="button">reset</button></p>
+        <p>
+          <!-- cantidad -->
+        </p>
+        <label for="cantidad">cantidad
+<input type="number" name="cantidad" id="cantidad" min="1" max="5">
+<!-- el minimo y maxipo para el numero maximo y minimo -->
+        </label>
+        <!-- horario preferido-->
+        <p>
+          <label for="horario">horario preferido
+            <select name="turno" id="turno">
+              <option value="matutino">Matutino</option>
+               <option value="vesperino" selected>vespertino</option>
+               <!-- sino selecciona ninguna con el selected la predeterminada des vepertino -->
+                <option value="nocturno">nocturno</option>
+                <!-- opciones -->
+            </select>
+          </label>
+        </p>
+        <!-- propuesta de cursos -->
+        <p>
+          <label for="propuesto">¿Qué cursos te gustaria agregar?
+            <input list="prop" name="propuesta" id="propuesta">
+          </label>
+          <datalist id="prop">
+            <option value="Jquery"></option>
+                 <option value="Aplicaciones en wb"></option>
+                      <option value="Angular J5"></option>
+                           <option value="Boostrap"></option>
+          </datalist>
+          <p>
+          <!-- Cursos -->
+        
+          </p>
+          <label for="cursos"><p>cursos</p>
+<input type="checkbox" name="check" value="php" >php<br>
+<input type="checkbox" name="check" value="html5" >Html5<br>
+<input type="checkbox" name="check" value="css" >Css<br>
+<input type="checkbox" name="check" value="mysql" >Mysql <br>
+<input type="checkbox" name="check" value="javascript" >javascript<br>
+<input type="checkbox" name="check" value="java" >java <br>
+
+          </label>
+        </p>
+        <p>
+          <!-- color de camiseta -->
+<label for="color">los primeros 10 eligen el colo de la camisa
+  <input type="color" id="color" value="#0a7f7f">
+</label>
+
+        </p>
+        <!-- horario -->
+        <p>
+<label for="dia">
+<p>Dia del curso</p>
+<input type="date" name="fecha1"> <br>
+<input type="datetime-local" name="fecha2"> <br>
+<input type="month" name="fecha3"> <br>
+<input type="time" name="hora"><br>
+</label>
+
+
+        </p>
+        <!-- usuario -->
+        <p>
+          <label for="usuario">Usuario
+            <input type="text" name="usuario" placeholder="Usuario">
+
+
+
+
+          </label>
+          <!-- contraseña -->
+          <p>
+            <label for="password">contraseña
+<input type="password" name="password" placeholder="contraseña">
+            </label>
+          </p>
+        </p>
+        <p>
+          <button type="reset" name="button">reset</button></p>
+        <button>enviar</button>
       </fieldset>
     </form>
+    <script src="js/formulario.js"></script>
   </body>
 </html>

@@ -11,13 +11,13 @@ let vecImagenes = ['<img src="imagenes2/img1.jpg" alt="" width="300px" height="3
 pos = 0, msg = "", i = 0, sigue = false;
 
 function vaciar() {
-    document.getElementById('n1').value = ""
+    document.getElementById('bandera').value = ""
 
 
 }
 
 function imagenes() {
-    let textoImagenes = document.getElementById("n1").value;
+    let textoImagenes = document.getElementById("bandera").value;
     textoImagenes = textoImagenes.toLowerCase();
 
     if (isNaN(textoImagenes)) {
