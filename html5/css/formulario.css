@@ -1,0 +1,16 @@
+table{
+    display: none;
+    width: 100%;
+    border: 3px solid black;
+    margin: auto;
+}
+td{
+    border: solid black;
+}
+form{
+    width: 50%;
+    margin: auto;
+    background-color: coral;
+    text-align: center;
+    border: 3px solid red;
+}

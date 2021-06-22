@@ -1,27 +1,30 @@
 let i = 0,
-    msj = "";
+    msj = "",
+    msj1 = "",
+    tabla = document.querySelector("table");
+td = document.querySelectorAll("td");
+console.log(tabla);
 
 function vaciar(elemento) {
-
-    elemento.value = ""
-
-
-
-    alert("llene todas las x")
+    elemento.value = "";
+    alert("Por favor llene los datos correctamente")
 }
 
-
-
-
-
 function formulario() {
-    // obtener nombre
+    tabla.style.display = "table"
+    //Obtener nombre
     let nombre = document.getElementById("nombre").value;
-    alert(nombre)
-    //obtener apellido
+    if (!isNaN(nombre.value)) {
+        vaciar(nombre);
+    } else
+        td[2].innerHTML = nombre.value;
+
+    //Obtener apellido
     let apellido = document.querySelector("#apellido").value;
-    alert(apellido)
-    //genero
+    td[4].innerHTML = apellido;
+
+
+    //Obtener genero
     let genero = document.getElementsByClassName("sexo");
     console.log(genero);
     for (i = 0; i < genero.length; i++) {
@@ -29,56 +32,59 @@ function formulario() {
             msj = genero[i].value;
         }
     }
-    alert(msj)
-    //correo
+    td[6].innerHTML = msj;
+    //Obtener correo electronico
     let correo = document.querySelector("#correo").value;
-    alert(correo)
-    //obtener sitio web
+    td[8].innerHTML = correo;
+    //Obtener sitio web
     let sitio = document.querySelector("#sitioweb").value;
-    alert(sitio)
-
-    //conocimientos previos
+    td[10].innerHTML = sitio;
+    //Conocimientos previos
     let puntaje = document.querySelector("#puntaje").value;
-    alert(puntaje + "0 % ");
-
-    //obtener cantidad
+    //alert(puntaje+"0%");
+    td[4].innerHTML = puntaje;
+    //Obtener cantidad
     let cantidad = document.querySelector("#cantidad").value;
     if (cantidad.value > 5 || cantidad.value < 1) {
-        vaciar(cantidad)
+        vaciar(cantidad);
     } else
-        alert(cantidad.value);
-
-
-    //obtener turno
+        td[14].innerHTML = cantidad;
+    //Obtener turno
     let turno = document.getElementById("turno").value
-    alert(turno);
-
-
-    //obtener seleccion del curso 
+    td[16].innerHTML = turno;
+    //Obtener seleccion del curso
     let seleccion = document.getElementById("propuesta").value
-    alert(seleccion);
-
-    // obtener cursos
-    let chek = document.getElementsByName("chek")
+    td[18].innerHTML = seleccion;
+    //Obtener cursos
+    let chek = document.getElementsByName("chek");
     for (i = 0; i < chek.length; i++) {
         if (chek[i].checked == true) {
             msj1 = msj1 + ' ' + chek[i].value;
         }
     }
-
-    alert(msj1);
-    //obtener el color de la camiseta
+    td[20].innerHTML = chek;
+    //obtener el color
     let color = document.getElementById("color").value;
-    alert(color);
+    td[22].innerHTML = "<input type='color' value" + color + ">";
 
     //obtener calendario
+    let calendario = document.querySelector("#fecha1").value;
+    td[24].innerHTML = calendario;
+    let fecha2 = document.querySelector("#fecha2").value;
+    td[26].innerHTML = fecha2;
+    let fecha3 = document.querySelector("#fecha3").value;
+    td[28].innerHTML = fecha3;
+    let fecha4 = document.querySelector("#fecha4").value;
+    td[30].innerHTML = fecha4;
 
-    let calendario = document.querySelector("#fecha1").value
-    alert(calendario);
 
 
-    let contra = document.querySelector("#contra").value
-    alert(contra);
+    //obtener usuario
+    let usuario = document.querySelector("#usuario").value;
+    td[32].innerHTML = usuario;
 
+    //obtener contraseña
+    let contra = document.querySelector("#contra").value;
+    td[34].innerHTML = contra;
 
 }

@@ -1,0 +1,56 @@
+.tabla-container{
+    margin-bottom: 5%;
+
+}
+
+table{
+    display: none;
+    width: 100%;
+    border: 3px solid black;
+    margin: auto;
+}
+td{
+    border: solid black;
+}
+form{
+    width: 50%;
+    margin: auto;
+    background-color: coral;
+    text-align: center;
+    border: 3px solid red;
+}
+    .titulo-header {
+    text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 30px;
+    
+
+  }
+
+  .header-div {
+    margin-bottom: 30px;
+
+    background-color: white;
+    box-shadow: rgb(53, 1, 1) 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   footer {
+      position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* para que este al final de la pagina */
+    text-align: center;
+    font-weight: 900;
+    /* para el tama;o del texto que esta en el pie de pagina */
+    background-color: #55f;
+    clear: both;
+  }
+
+  .footer {
+    
+    color: black;
+  } 

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocina</title>
+    <link rel="stylesheet" href="css/trabajo en grupo.css" />
+  </head>
+  <div class="header-div">
+    <span class="titulo-header">formulario</span>
+  </div>
+
+  <body>
+    <form class="" action="index.html" method="POST">
+      <fieldset>
+        <!--Nombre-->
+        <legend>Tus datos</legend>
+        <p>
+          <label for="nombre"
+            >Nombre:
+            <!--Apellido-->
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Escriba su nombre"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label for="apellido"
+            >Apellido:
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Escriba su apellido"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <!--Sexo-->
+          <radiogroup id="sex">
+            <label for="sexo">
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="hombre"
+                autofocus
+                checked
+              />Hombre<br />
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="mujer"
+              />Mujer<br />
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="otro"
+              />Otro<br />
+            </label>
+          </radiogroup>
+        </p>
+        <!--Experiencia en cocina-->
+        <p>
+          <label for="conocimientos"
+            >¿Cuanto sabes de cocina?
+            <input type="range" name="puntaje" id="puntaje" min="0" max="10" />
+          </label>
+        </p>
+        <!--Provincia-->
+        <p>Provincia</p>
+        <select id="provincia" class="form-select">
+          <option value="guanacaste">Guanacaste</option>
+          <option value="alajuela">Alajuela</option>
+          <option value="puntarenas">Puntarenas</option>
+          <option value="sanjose">San José</option>
+          <option value="limon">Limon</option>
+          <option value="heredia">Heredia</option>
+          <option value="cartago">Cartago</option>
+        </select>
+        <!--Especialidades-->
+        <p>
+          <label for="cursos">
+            <p>Especialidades</p>
+            <div id="contenedor-checkbox">
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="carnes"
+                id="check1"
+              />Carnes
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="pastas"
+                id="check2"
+              />Pastas
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="comidas rapidas"
+                id="check3"
+              />Comidas rapidas
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="arroz"
+                id="check4"
+              />Arroz
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="mariscos"
+                id="check5"
+              />Mariscos
+            </div>
+          </label>
+        </p>
+        <!--Color-->
+        <p>
+          <label for="color"
+            >Color para el uniforme
+            <input type="color" id="color" value="#0a7f7f" />
+          </label>
+        </p>
+        <!--Fecha de la entrevista-->
+        <p>
+          <label for="dia">
+            <p>Día de la entrevista</p>
+            <input type="datetime-local" name="fecha2" id="fecha2" /><br />
+          </label>
+        </p>
+      </fieldset>
+    </form>
+    <button onclick="formulario()">Enviar</button>
+
+    <table class="tabla-container">
+      <tr>
+        <td colspan="2" align="center">Datos compilados</td>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td id="nombreResultado"></td>
+      </tr>
+      <tr>
+        <td>Apellido</td>
+        <td id="apellidoResultado"></td>
+      </tr>
+      <tr>
+        <td>Género</td>
+        <td id="generoResultado"></td>
+      </tr>
+      <tr>
+        <td>Experiencia de cocina</td>
+        <td id="experienciaDeCocinaResultado"></td>
+      </tr>
+      <tr>
+        <td>Provincia</td>
+        <td id="ProvinciaResultado"></td>
+      </tr>
+      <tr>
+        <td>Especialidades</td>
+        <td id="EspecialidadesResultado"></td>
+      </tr>
+      <tr>
+        <td>Color preferido para el uniforme</td>
+        <td id="ColorPreferidoResultado"></td>
+      </tr>
+      <tr>
+        <td>Fecha de entrevista</td>
+        <td id="FechaDeEntrevista"></td>
+      </tr>
+    </table>
+
+    <script src="js/trabajo en grupo.js"></script>
+  </body>
+  <footer>
+    <p class="footer">Cocina</p>
+  </footer>
+</html>
