@@ -1,207 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="css/formulario.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/formulario.css" />
+  </head>
+  <body>
     <h1>Formularios</h1>
     <form class="" action="index.html" method="POST">
-        <fieldset>
-            <!--Nombre-->
-            <legend>Tus datos</legend>
-            <p> <label for="nombre">Nombre:
+      <fieldset>
+        <!--Nombre-->
+        <legend>Tus datos</legend>
+        <p>
+          <label for="nombre"
+            >Nombre:
             <!--Apellido-->
-                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required>
-            </label> </p>
-            
-            <p> <label for="apellido">Apellido:
-                <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required>
-            </label> </p>
-            <p>
-            <!--Sexo-->
-                <radiogroup id="sex">
-                    <label for="sexo">
-                        <input type="radio" class="sexo" name="sexo" value="hombre" autofocus checked>Hombre<br>
-                        <input type="radio" class="sexo" name="sexo" value="mujer">Mujer<br>
-                        <input type="radio" class="sexo" name="sexo" value="otro">Otro<br>
-                    </label>
-                </radiogroup>
-            </p>
-            <!--Correo electronico-->
-            <p>
-                <label for="correo">Correo electronico
-                    <input type="email" name="correo" id="correo" placeholder="tucorreo(arroba)dominio.com"
-                    validate=true required>
-                </label>
-            </p>
-            <!--Sitio web-->
-            <p>
-                <label for="correo">Tu sitio web
-                    <input type="url" name="sitioweb" id="sitioweb" placeholder="http://tusitio.com"
-                    validate=true required>
-                </label>
-            </p>
-            <!--Conocimientos previos-->
-            <p>
-            <label for="conocimientos">¿Cuanto sabes de html5?
-                <input type="range" name="puntaje" id="puntaje" min=0 max=10>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Escriba su nombre"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label for="apellido"
+            >Apellido:
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Escriba su apellido"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <!--Sexo-->
+          <radiogroup id="sex">
+            <label for="sexo">
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="hombre"
+                autofocus
+                checked
+              />Hombre<br />
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="mujer"
+              />Mujer<br />
+              <input
+                type="radio"
+                class="sexo"
+                name="sexo"
+                value="otro"
+              />Otro<br />
             </label>
-            </p>
-            <!--Cantidad-->
-            <p>
-            <label for="cantidad">Cantidad
-                <input type="number" name="cantidad" id="cantidad" min=1 max=5>
-            </label>
-            </p>
-            <!--Horario preferido-->
-            <p>
-                <label for="horario">Horario preferido
-                    <select name="turno" id="turno">
-                        <option value="matutino">Matutino</option>
-                        <option value="vespertino" selected>Vespertino</option>
-                        <option value="nocturno">Nocturno</option>
-                    </select>
-                </label>
-            </p>
-            <!--Propuestea de cursos-->
-            <p>
-                <label for="propuesta">¿Que cursos te gustaria agregar?
-                    <input list="prop" name="propuesta" id="propuesta">
-                </label>
-                <datalist id="prop">
-                    <option value="Jquery"></option>
-                    <option value="Aplicaciones web"></option>
-                    <option value="Angular JS"></option>
-                    <option value="Boostrap"></option>
-                </datalist>
-            </p>
-            <!--Cursos-->
-            <p>
-                <label for="cursos"><p>Cursos</p>
-                    <input type="checkbox" name="checkbox" value="php" id="chek">PHP <br>
-                    <input type="checkbox" name="checkbox" value="html5" id="chek">HTML5 <br>
-                    <input type="checkbox" name="checkbox" value="css" id="chek">CSS <br>
-                    <input type="checkbox" name="checkbox" value="mysql" id="chek">MySql <br>
-                    <input type="checkbox" name="checkbox" value="javascript" id="chek">Javascript <br>
-                    <input type="checkbox" name="checkbox" value="java" id="chek">Java <br>
-                </label>
-            </p>
-            <!--Color de camiseta-->
-            <p>
-                <label for="color">Los primeros 10 eligen el color de camisa
-                    <input type="color" id="color" value="#0a7f7f">
-                </label>
-            </p>
-            <!--Horarios-->
-            <p>
-                <label for="dia"><p>Día del curso</p>
-                    <input type="date" name="fecha1" id="fecha1" id="fecha1"><br>
-                    <input type="datetime-local" name="fecha2" id="fecha2"><br>
-                    <input type="month" name="fecha3" id="fecha3"><br>
-                    <input type="time" name="hora" id="fecha4"><br>
-                </label>
-            </p>
-            <!--Usuario-->
-            <p>
-                <label for="usuario">Usuario
-                    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
-                </label>
-            </p>
-            <!--Contraseña-->
-            <p>
-                <label for="password">Contraseña
-                    <input type="password" name="password" placeholder="Contraseña" id="contra">
-                </label>
-            </p>
-            
+          </radiogroup>
+        </p>
+        <!--Correo electronico-->
+        <p>
+          <label for="correo"
+            >Correo electronico
+            <input
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="tucorreo(arroba)dominio.com"
+              validate="true"
+              required
+            />
+          </label>
+        </p>
+        <!--Sitio web-->
+        <p>
+          <label for="correo"
+            >Tu sitio web
+            <input
+              type="url"
+              name="sitioweb"
+              id="sitioweb"
+              placeholder="http://tusitio.com"
+              validate="true"
+              required
+            />
+          </label>
+        </p>
+        <!--Conocimientos previos-->
+        <p>
+          <label for="conocimientos"
+            >¿Cuanto sabes de html5?
+            <input type="range" name="puntaje" id="puntaje" min="0" max="10" />
+          </label>
+        </p>
+        <!--Cantidad-->
+        <p>
+          <label for="cantidad"
+            >Cantidad
+            <input
+              type="number"
+              name="cantidad"
+              id="cantidad"
+              min="1"
+              max="5"
+            />
+          </label>
+        </p>
+        <!--Horario preferido-->
+        <p>
+          <label for="horario"
+            >Horario preferido
+            <select name="turno" id="turno">
+              <option value="matutino">Matutino</option>
+              <option value="vespertino" selected>Vespertino</option>
+              <option value="nocturno">Nocturno</option>
+            </select>
+          </label>
+        </p>
+        <!--Propuestea de cursos-->
+        <p>
+          <label for="propuesta"
+            >¿Que cursos te gustaria agregar?
+            <input list="prop" name="propuesta" id="propuesta" />
+          </label>
+          <datalist id="prop">
+            <option value="Jquery"></option>
+            <option value="Aplicaciones web"></option>
+            <option value="Angular JS"></option>
+            <option value="Boostrap"></option>
+          </datalist>
+        </p>
+        <!--Cursos-->
+        <p>
+          <label for="cursos"
+            ><p>Cursos</p>
+            <input type="checkbox" name="checkbox" value="php" id="chek" />PHP
+            <br />
+            <input
+              type="checkbox"
+              name="checkbox"
+              value="html5"
+              id="chek"
+            />HTML5 <br />
+            <input type="checkbox" name="checkbox" value="css" id="chek" />CSS
+            <br />
+            <input
+              type="checkbox"
+              name="checkbox"
+              value="mysql"
+              id="chek"
+            />MySql <br />
+            <input
+              type="checkbox"
+              name="checkbox"
+              value="javascript"
+              id="chek"
+            />Javascript <br />
+            <input type="checkbox" name="checkbox" value="java" id="chek" />Java
+            <br />
+          </label>
+        </p>
+        <!--Color de camiseta-->
+        <p>
+          <label for="color"
+            >Los primeros 10 eligen el color de camisa
+            <input type="color" id="color" value="#0a7f7f" />
+          </label>
+        </p>
+        <!--Horarios-->
+        <p>
+          <label for="dia"
+            ><p>Día del curso</p>
+            <input
+              type="date"
+              name="fecha1"
+              id="fecha1"
+              id="fecha1"
+              class="fecha"
+            /><br />
+            <input
+              type="datetime-local"
+              name="fecha2"
+              id="fecha2"
+              class="fecha"
+            /><br />
+            <input type="month" name="fecha3" id="fecha3" class="fecha" /><br />
+            <input type="time" name="hora" id="fecha4" class="fecha" /><br />
+          </label>
+        </p>
+        <!--Usuario-->
+        <p>
+          <label for="usuario"
+            >Usuario
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              placeholder="Usuario"
+            />
+          </label>
+        </p>
+        <!--Contraseña-->
+        <p>
+          <label for="password"
+            >Contraseña
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              id="contra"
+            />
+          </label>
+        </p>
 
-
-            <!--Boton-->
-            <p>
-                <button type="reset" name="button">Reset</button>
-
-            </p>
-        </fieldset>
+        <!--Boton-->
+        <p>
+          <button type="reset" name="button">Reset</button>
+        </p>
+      </fieldset>
     </form>
     <button onclick="formulario()">Enviar</button>
     <table>
-        <tr>
-            <td colspan="2" align="center">Datos compilados</td>
-        </tr>
-        <tr>
-            <td>Nombre</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Apellido</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Género</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Correo electrónico--</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Sitio web</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Conocimientos</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Cantidad</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Turno</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Propuesta de curso</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Cursos</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Color de la camiseta</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Horario</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Fecha hora</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Mes</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Hora</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Usuario</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Contraseña</td>
-            <td></td>
-        </tr>
-
+      <tr>
+        <td colspan="2" align="center">Datos compilados</td>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Apellido</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Género</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Correo electrónico--</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Sitio web</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Conocimientos</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Cantidad</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Turno</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Propuesta de curso</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Cursos</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Color de la camiseta</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Horario</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Fecha hora</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Mes</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Hora</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Usuario</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Contraseña</td>
+        <td></td>
+      </tr>
     </table>
+    <footer><p class="footer">Departamento de Tics 2021</p></footer>
     <script src="js/formulario.js"></script>
-</body>
+  </body>
 </html>

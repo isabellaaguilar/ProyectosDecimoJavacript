@@ -1,0 +1,42 @@
+body{
+    background-color:rgb(255, 255, 255);
+
+}
+#tabla{
+ 
+
+color: black;
+width: 785px;
+
+margin: 25px auto;
+
+}
+table{
+    border: 3px  black;
+    width: 800px;
+    text-align: center;
+ 
+}
+
+
+td{
+    border: 2px solid black;
+}
+.header{
+    font-size: larger;
+    background-color: teal;
+  
+}
+tr.con td:nth-child(2n){
+    background-color: antiquewhite;
+}
+tr.con td:nth-child(2n-1){
+    background-color: rgb(62, 211, 216);
+}
+tr.con td:nth-child(5){
+    background-color: red;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
