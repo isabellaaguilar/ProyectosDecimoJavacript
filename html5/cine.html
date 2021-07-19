@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="css/estilotienda2.css" />
+  </head>
+  <body>
+    <h1>Cine</h1>
+    
+    <div class="contener-boton"></div>
+    <div id="tabla">
+        <div class="img">
+      <!-- aling center para centrar las letras en la tabla -->
+      <table cellpadding="5px">
+        <!-- borde para el borde de la tabla -->
+        <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
+        <!-- esto sirve para separar los margenes hacia los lados -->
+        <tr>
+          <td colspan="3px" align="center">Cine</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+           
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(0,5,this)"
+        />
+        <p>Valor: $5</p></td>
+
+          <td> <img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+        
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(1,5,this)"
+        />
+        <p>Valor: $5</p></td>
+
+
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+           
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(2,5,this)"
+        />
+        <p>Valor: $5</p></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+       
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(3,5,this)"
+        />
+        <p>Valor: $5</p></td>
+
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+            
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(4,5,this)"
+        />
+        <p>Valor: $5</p></td>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+            
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(5,5,this)"
+        />
+        <p>Valor: $5</p></td>
+        </tr>
+          <tr>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+              <p class="cantidad">
+          
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(6,5,this)"
+        />
+        <p>Valor: $5</p></td>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+           
+        <p></p>
+
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(7,5,this)"
+        />
+        <p>Valor: $5</p></td>
+          <td> <img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+              
+            
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(8,5,this)"
+        />
+        <p>Valor: $5</p></td>
+        </tr>
+        <tr>
+          <td> <img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+            
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(9,5,this)"
+        />
+        <p>Valor: $5</p></td>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+            
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(10,5,this)"
+        />
+        <p>Valor: $5</p></td>
+          <td><img src="imagenes/butacas.jpg" alt="" width="300px" height="300px" />
+              
+        <p></p>
+        <input
+          type="button"
+          value="Añadir al carrito"
+          onclick="carrito(11,5,this)"
+        />
+        <p>Valor: $5</p></td>
+        </tr>
+        
+</div>
+        <tr>
+        
+          <!-- right para que el texto esta a la derecha left izquierda -->
+        </tr>
+      </table>
+
+      <br>
+      <div style="display: none; " id="cancelacion" ><h1 style="color: red;">Su pedido esta cancelado</h1></div>
+
+      <div style="margin-top: 60px" class="contener-boton">
+      <button class="boton-comprar" onclick="comprar()">Comprar</button>
+
+      <input type="button" name="" value="Cancelar" onclick="cancelar()" class="boton">
+    </div>
+    </div>
+
+    <div class="contener-boton">
+      <div id="imgProductos"></div>
+      <div id="montoProductos"></div>
+    </div>
+
+    <!-- li para hacer una lista -->
+  </body>
+  <script src="js/tienda2.js"></script>
+</html>

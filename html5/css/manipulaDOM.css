@@ -1,0 +1,11 @@
+p{
+    background-color: blue;
+}
+p#segundo{
+    background-color: red;
+}
+.diferente{
+    background-color: green;
+    color: yellow;
+    
+}

@@ -1,0 +1,68 @@
+body{
+    background-color:black;
+}
+#tabla{
+ 
+background-color: #fff;
+color: black;
+width: 870px;
+
+margin: 15px auto;
+/* margin para centrar la tabla */
+}
+table{
+    border: 3px  black;
+    width: 400px;
+    text-align: center;
+    /* para que el color este igual al tama;o de la tabla */
+}
+
+img{
+    height: 150px;
+    width: auto;
+}
+td{
+    border: 4px solid black;
+}
+/*  */
+
+    
+   
+    
+    .boton-comprar {
+      width: 400px;
+      height: 80px;
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
+      /* mayusculas */
+    }
+    .contener-boton {
+      text-align: center;
+      /* centrar boton y el texto de adentro */
+    }
+  
+  
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      color: red;
+    }
+    input {
+      font-size: 30px;
+      /* tamaño de letra */
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 30px;
+      color: red;
+      text-align: center;
+    }
+    #imgProductos {
+      border: 1px solid black;
+    }
+    

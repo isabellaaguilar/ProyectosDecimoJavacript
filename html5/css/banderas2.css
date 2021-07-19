@@ -1,0 +1,20 @@
+table{
+    width: 800px;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+td{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+img{
+    border: 2px solid silver;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    box-shadow: #005 5px 10px 10px;
+}
