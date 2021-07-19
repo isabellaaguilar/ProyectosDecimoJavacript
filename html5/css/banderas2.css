@@ -18,3 +18,8 @@ img{
     width: 300px;
     box-shadow: #005 5px 10px 10px;
 }
+body{
+       background-image: url(../imagenes/fondofutbol.jpg);
+   background-size: 25px 50px;
+       background-size: 200%;
+}
