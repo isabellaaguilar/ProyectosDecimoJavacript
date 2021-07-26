@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carrucel</title>
+    <link rel="stylesheet" href="css/carrusel.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="imagen actual">
+        <img src="imagenes/1.jpg" alt="" />
+        <div class="texto">Random1</div>
+      </div>
+
+      <div class="imagen">
+        <img src="imagenes/2.jpg" alt="" />
+        <div class="texto">Random2</div>
+      </div>
+
+      <div class="imagen">
+        <img src="imagenes/3.jpg" alt="" />
+        <div class="texto">Random3</div>
+      </div>
+
+      <div class="imagen">
+        <img src="imagenes/4.jpg" alt="" />
+        <div class="texto">Random4</div>
+      </div>
+      <a href="#" class="anterior" onclick="anterior()">&#10094;</a>
+      <a href="#" class="anterior" onclick="siguiente()">&#10095;</a>
+      <div class="puntos">
+        <span class="punto activo" onclick="mostrar(0)"></span>
+        <span class="punto" onclick="mostrar(1)"></span>
+        <span class="punto" onclick="mostrar(2)"></span>
+        <span class="punto" onclick="mostrar(3)"></span>
+      </div>
+      <div class="boton">
+        <a href="">
+          <img
+            src="imagenes/61039.png"
+            alt=""
+            id="bot"
+            onclick="playpause()"
+            width="30px"
+            height="30px"
+          />
+        </a>
+      </div>
+    </div>
+      </div>
+  
+    <footer>
+      <p class="footer">Todos los derechos reservados</p>
+      <p class="footer">desarrollador web</p>
+      <p class="footer">I.AC</p>
+    </footer>
+  </body>
+  <script src="js/carrucel.js"></script>
+</html>
