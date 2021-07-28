@@ -1,0 +1,25 @@
+table{
+    width: 800px;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+td{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+img{
+    border: 2px solid silver;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    box-shadow: #005 5px 10px 10px;
+}
+body{
+       background-image: url(../imagenes/fondofutbol.jpg);
+   background-size: 25px 50px;
+       background-size: 200%;
+}

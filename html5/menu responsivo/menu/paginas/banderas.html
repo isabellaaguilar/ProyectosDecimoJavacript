@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banderas centroamerica</title>
+    <link rel="stylesheet" href="css/banderas.css" />
+  </head>
+  <header id="principal">
+    <div id="titulo">
+      <h1>Países de centroamerica</h1>
+    </div>
+  </header>
+  <body>
+    <h1>seleccione a un país centroamericano</h1>
+    <!-- <input type="text" placeholder="País de centroamerica" id="n1" />
+    <button onclick="imagenes()">buscar</button> -->
+
+    <p>
+      <label for="bandera">
+        <select name="bandera" id="bandera">
+          <option value="costarica">Costa Rica</option>
+          <option value="elsalvador" selected>El salvador</option>
+          <!-- sino selecciona ninguna con el selected la predeterminada des vepertino -->
+          <option value="nicaragua">Nicaragua</option>
+          <option value="Panama">Panama</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="belice">belice</option>
+
+          <!-- opciones -->
+        </select>
+        <button class="boton" onclick="imagenes()">ver</button>
+      </label>
+    </p>
+
+    <p></p>
+    <div id="n2"></div>
+    <div id="n3"></div>
+    <a href="../menu.html"><button class="boton">Volver al menu</button></a>
+    <footer>
+      <p class="footer">Hecho por Isabella Aguilar Calvo</p>
+    </footer>
+    <script src="js/banderas.js"></script>
+  </body>
+</html>

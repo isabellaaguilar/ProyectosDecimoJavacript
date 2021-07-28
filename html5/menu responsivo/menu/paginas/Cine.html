@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine</title>
+    <link rel="stylesheet" type="text/css" href="css/Cine.css" />
+  </head>
+  <body>
+    <header id="principal">
+      <div id="titulo">
+        <h1>Cine</h1>
+      </div>
+    </header>
+    <div id="table">
+      <table cellpadding="5px" border="3px">
+        <tr>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(0,4000,this)"
+            />
+            <p>1 valor 4000</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(1,4000,this)"
+            />
+            <p>2 valor 4000</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(2,4000,this)"
+            />
+            <p>3 valor 4000</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(3,4000,this)"
+            />
+            <p>4 valor 4000</p>
+          </td>
+
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(4,4000,this)"
+            />
+            <p>5 valor 4000</p>
+          </td>
+
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(5,4000,this)"
+            />
+            <p>6 valor 4000</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(6,3500,this)"
+            />
+            <p>7 valor 3500</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(7,3500,this)"
+            />
+            <p>8 valor 3500</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(8,3500,this)"
+            />
+            <p>9 valor 3500</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(9,3500,this)"
+            />
+            <p>10 valor 3500</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(10,3500,this)"
+            />
+            <p>10 valor 3500</p>
+          </td>
+          <td>
+            <img
+              src="imagenes/butaca.jpg"
+              height="340"
+              width="450"
+              class="ima"
+            />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Añadir al carrito"
+              class="imas"
+              onclick="carrito(11,3500,this)"
+            />
+            <p>10 valor 3500</p>
+          </td>
+        </tr>
+        <br />
+        <br />
+      </table>
+    </div>
+    <button class="imas" onclick="comprar()">Comprar</button>
+    <button id="boton" onclick="cancelar()">Cancelar</button>
+    <br />
+    <br />
+    <div id="n1"></div>
+    <div id="n2"></div>
+    <a href="../menu.html"><button class="boton">Volver al menu</button></a>
+
+    <footer>
+      <p class="footer">Pantalla</p>
+    </footer>
+    <script src="js/Cine.js"></script>
+  </body>
+</html>

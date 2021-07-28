@@ -1,0 +1,99 @@
+.cuadro{
+    position: relative;
+    top: 40px;
+    width: 80%;
+    margin: auto;
+}
+img{
+    width: 40%;
+    height: 40%;
+    border-style: solid;
+    border-color: rosybrown;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+    
+.carta{
+    margin: 8px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+    /* centra el texto que tengo dentro de la clase carta */
+
+}
+.contenedor{
+    position: relative;
+    padding: 0 16px;
+    margin: 40px;
+    /* centra aun mas  */
+}
+p, h2{
+    font-size: 2.3rem;
+}
+.refran{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 20px;
+
+}
+h2{
+    text-align: center;
+}
+.centrar{
+    position: absolute;
+    color: whitesmoke;
+    top: 90%;
+    width: 100%;
+    background-color: rgb(49, 22, 22);
+    text-align: center;
+}
+.titulo-header {
+    text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 30px;
+    
+
+  }
+.header-div {
+    margin-bottom: 30px;
+
+    background-color: rgb(240, 183, 183);
+    box-shadow: rgb(53, 1, 1) 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+footer {
+    background-color: rgb(240, 183, 183);
+    display: block;
+    position: fixed;
+    bottom: 0;
+width: 100%;  
+height: 40px;
+    color: rgb(0, 0, 0);
+  }
+  .footer {
+      text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+@media screen and (max-width:800px) {
+    
+    .carta{
+       display: block;
+       text-align: center;
+    }
+    img{
+       width: 60%;
+       border-radius: 50%;
+    }
+    p, h2{
+        font-size: 1.3rem;
+    }
+    
+    .centrar{
+        position: relative;
+        
+    }
+    }
