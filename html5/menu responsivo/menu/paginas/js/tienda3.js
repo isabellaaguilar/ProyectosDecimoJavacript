@@ -24,11 +24,6 @@ function carrito(pos, precio, esto) {
 function comprar() {
     document.getElementById("imgpro").innerHTML = "Estos son tus productos:<br>" + msg;
 
-
-
-
-
-
     document.getElementById("montopro").innerHTML = "Tienes que pagar " + a + " colones"
 }
 
@@ -43,5 +38,23 @@ function cancelar() {
             a = 0;
         }
     }
-    alert("Los producto/s se han cancelado");
+    alert("Los productos se han cancelado");
 }
+let contador=true,
+    nav=document.querySelector('nav'),
+    bt=document.querySelector('.bt_menu'),
+    menu=document.querySelector(".fas");
+    menu.addEventListener('click',menuresponsive);
+    //bt.addEventListener('click',menuresponsive);
+    function menuresponsive(){
+        if(contador){
+ 	    nav.style.transition="0.7s";
+            nav.style.left="0";
+            contador=false;
+        }
+        else{
+            contador=true;
+ 	    nav.style.transition="0.7s";
+            nav.style.left="-100%";
+        }
+    }

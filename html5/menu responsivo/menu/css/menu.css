@@ -3,11 +3,11 @@
     padding: 0;
 }
 body{
-    background-color: #fefefe5d;
+    background: url(../imagenes/fondo.jpg);
   
 }
 header{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
     z-index: 100;
@@ -15,7 +15,7 @@ header{
 header nav{
     width: 100%;
     margin: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: black;
     padding: 2px;
     box-shadow:#005 4px 3px 10px;
 }
@@ -52,7 +52,7 @@ header nav ul li a:hover{
 }
 
 img{
-    opacity: 0.8;
+   
     border-radius: 40px;
 }
 #logo{
@@ -101,7 +101,7 @@ footer{
     header nav{
         top: 70px;
         width: 70%;
-        height: 70%;
+      
         left: -100%;
         position: fixed;
     }
@@ -157,4 +157,35 @@ footer{
       cursor: default;
     }
 
+}
+.portada{
+
+    margin-top: 300px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: cursive;
+    font-size: 22px;
+    background-color: white;
+    height: 900px;
+    box-shadow: #000000 5px 15px 100px;
+}
+@media screen and (max-width: 800px){
+    .portada{
+    margin-top: 300px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 18px;
+    background-color: white;
+    padding: 15px;
+    height: 900px;
+    box-shadow: #000000 5px 15px 100px;
+    }
+}
+.contenportada{
+padding-top: 20%;
 }

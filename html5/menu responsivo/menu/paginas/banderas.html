@@ -6,17 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banderas centroamerica</title>
     <link rel="stylesheet" href="css/banderas.css" />
+ <link
+      rel="stylesheet"
+      href="css/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
   </head>
-  <header id="principal">
-    <div id="titulo">
-      <h1>Países de centroamerica</h1>
-    </div>
-  </header>
+
+  <script src="https://use.fontawesome.com/8e8378f739.js"></script>
+  </head>
   <body>
+     <header>
+      <div class="menu_bar">
+        <i class="fas fa-home"></i>
+        <a href="#" class="bt_menu">Menu</a>
+      </div>
+      <nav>
+        <span id="logo"
+          ><img
+            src="imagenes/Desarrollo.png"
+            alt=""
+    class="logo-menu"
+        /></span>
+        <ul>
+          <li>
+            <a href="../menu.html"><i class="fas fa-home"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="tienda2.html"><i class="fas fa-store"></i>Tienda</a>
+          
+          <li class="submenu">
+            <a href=""><i class="fas fa-theater-masks"></i>Entretenimiento</a>
+            <ul class="children">
+              <li><a href="zodiaco.html">Hóroscopo</a></li>
+              <br />
+              <li><a href="cine.html">Cine</a></li>
+              <br />
+              <li><a href="banderas2.html">Torneo deportivo</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a href="banderas.html"
+              ><i class="fas fa-flag"></i>Banderas</a
+            >
+          </li>
+          <li>
+            <a href="contactenos.html"
+              ><i class="fas fa-id-card-alt"></i>Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <body>
+    <div class="container">
+
+    
     <h1>seleccione a un país centroamericano</h1>
     <!-- <input type="text" placeholder="País de centroamerica" id="n1" />
     <button onclick="imagenes()">buscar</button> -->
-
+<br>
     <p>
       <label for="bandera">
         <select name="bandera" id="bandera">
@@ -30,6 +79,7 @@
 
           <!-- opciones -->
         </select>
+        <br>
         <button class="boton" onclick="imagenes()">ver</button>
       </label>
     </p>
@@ -37,7 +87,7 @@
     <p></p>
     <div id="n2"></div>
     <div id="n3"></div>
-    <a href="../menu.html"><button class="boton">Volver al menu</button></a>
+   </div>
     <footer>
       <p class="footer">Hecho por Isabella Aguilar Calvo</p>
     </footer>

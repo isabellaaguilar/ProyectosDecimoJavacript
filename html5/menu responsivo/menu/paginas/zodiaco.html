@@ -5,18 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/zodiaco.css" />
+ <script src="https://use.fontawesome.com/8e8378f739.js"></script>
 
-    <div class="header-div">
-      <span class="titulo-header">Zodiaco</span>
-    </div>
+
+
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+  </head>
+
+  <script src="https://use.fontawesome.com/8e8378f739.js"></script>
   </head>
   <body>
+     <header>
+      <div class="menu_bar">
+        <i class="fas fa-home"></i>
+        <a href="#" class="bt_menu">Menu</a>
+      </div>
+      <nav>
+        <span id="logo"
+          ><img
+            src="imagenes/Desarrollo.png"
+            alt=""
+    class="logo-menu"
+        /></span>
+        <ul>
+          <li>
+            <a href="../menu.html"><i class="fas fa-home"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="tienda2.html"><i class="fas fa-store"></i>Tienda</a>
+          
+          <li class="submenu">
+            <a href=""><i class="fas fa-theater-masks"></i>Entretenimiento</a>
+            <ul class="children">
+              <li><a href="zodiaco.html">Hóroscopo</a></li>
+              <br />
+              <li><a href="cine.html">Cine</a></li>
+              <br />
+              <li><a href="banderas2.html">Torneo deportivo</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a href="banderas.html"
+              ><i class="fas fa-flag"></i>Banderas</a
+            >
+          </li>
+          <li>
+            <a href="contactenos.html"
+              ><i class="fas fa-id-card-alt"></i>Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <body>
     <div class="container">
+      <br>
       <h1>DIGITE SU MES Y DIA DE NACIMIENTO</h1>
+      <br>
       <h1>Mes</h1>
+      <br>
       <input type="text" id="mes" placeholder="mes" />
+      <br>
       <h1>Día</h1>
+      <br>
       <input type="text" id="dia" placeholder="dia" />
+      <br>
 
       <p></p>
       <button
@@ -24,7 +81,7 @@
       >
         Signo
       </button>
-      <a href="../menu.html"><button class="boton">Volver al menu</button></a>
+
 
       <footer>
         <p class="footer">Zodiaco</p>

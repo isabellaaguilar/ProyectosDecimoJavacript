@@ -4,14 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tienda informatica</title>
     <link rel="stylesheet" type="text/css" href="css/tienda3.css" />
+    <script src="https://use.fontawesome.com/8e8378f739.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+
+    <script src="https://use.fontawesome.com/8e8378f739.js"></script>
   </head>
   <body>
-    <header id="principal">
-      <div id="titulo">
-        <h1>Bienvenido! haz tu compra</h1>
+    <header>
+      <div class="menu_bar">
+        <i class="fas fa-home"></i>
+        <a href="#" class="bt_menu">Menu</a>
       </div>
+      <nav>
+        <span id="logo"
+          ><img src="imagenes/Desarrollo.png" alt="" class="logo-menu"
+        /></span>
+        <ul>
+          <li>
+            <a href="../menu.html"><i class="fas fa-home"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="tienda2.html"><i class="fas fa-store"></i>Tienda</a>
+
+            <a href=""><i class="fas fa-theater-masks"></i>Entretenimiento</a>
+            <ul class="children">
+              <li><a href="zodiaco.html">Hóroscopo</a></li>
+              <br />
+              <li><a href="cine.html">Cine</a></li>
+              <br />
+              <li><a href="banderas2.html">Torneo deportivo</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a href="banderas.html"><i class="fas fa-flag"></i>Banderas</a>
+          </li>
+          <li>
+            <a href="contactenos.html"
+              ><i class="fas fa-id-card-alt"></i>Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <div id="tabla">
       <table cellpadding="5px" border="3px">
@@ -304,7 +344,6 @@
 
     <button onclick="comprar()" class="ima" id="comp">comprar</button>
     <button id="boton" onclick="cancelar()">Cancelar</button>
-    <a href="../menu.html"><button class="boton">Volver al menu</button></a>
 
     <div id="imgpro"></div>
     <br />

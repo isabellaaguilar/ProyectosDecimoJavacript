@@ -125,3 +125,9 @@ header nav ul li .children{
    margin-right: 15px;
 }
 }
+
+.logo-menu{
+   width: 100px !important;
+   height: 60px !important ;
+   
+}
