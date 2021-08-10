@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reloj</title>
+
+    <link rel="stylesheet" href="css/reloj.css" />
+    <link rel="stylesheet" href="css/fontello/css/fontello.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu_bar">
+        <i class="icon-menu"></i>
+        <a href="#" class="bt_menu">Menú</a>
+      </div>
+
+      <nav>
+        <span id="logo"
+          ><img
+            src="imagenes/Desarrollo.png"
+            width="100px"
+            height="60px"
+            alt=""
+        /></span>
+        <ul>
+          <li>
+            <a href="menu.html"><i class="fas fa-home"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="reloj1.html"><i class="fas fa-briefcase"></i>Hora</a>
+          </li>
+          <!-- <li class="submenu">
+        <a href=""><i class="fas fa-project-diagram"></i>Jquery</a>
+        <ul class="children">
+          <li>Submenu 1</li>
+          <li>Submenu 2</li>
+          <li>Submenu 3</li>
+        </ul>
+      </li> -->
+          <li>
+            <a href="jquey.html"><i class="fas fa-hands-helping"></i>Jquery</a>
+          </li>
+          <li>
+            <a href="contactenos.html"
+              ><i class="far fa-address-card"></i>Contactos</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrap">
+      <div class="widget">
+        <div class="fecha">
+          <p id="diasemana" class="diasemana"></p>
+          <p id="dia" class="dia"></p>
+          <p>de</p>
+          <p id="mes" class="mes"></p>
+          <p>del</p>
+          <p id="year" class="year"></p>
+        </div>
+        <div class="reloj">
+          <p id="horas" class="horas"></p>
+          <p>:</p>
+          <p id="minutos" class="minutos"></p>
+          <p>:</p>
+          <div class="cajasegundos">
+            <p id="ampm" class="ampm"></p>
+            <p id="segundos" class="segundos"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/reloj.js"></script>
+</html>

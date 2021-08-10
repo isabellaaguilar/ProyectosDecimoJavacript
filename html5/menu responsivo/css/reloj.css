@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-size: 16px;
+}
+.wrap{
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+}
+.widget{
+    width: 90%;
+  margin: 2em;
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+.fecha{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 100%;
+}
+.reloj{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    width: 100%;
+}
+.reloj .cajasegundos{
+    display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
