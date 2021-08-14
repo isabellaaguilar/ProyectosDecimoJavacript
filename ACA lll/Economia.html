@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economia</title>
+  <link rel="stylesheet" href="css/navegacion.css">
+  <script src="https://use.fontawesome.com/8e8378f739.js"></script>
+
+
+
+  <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css" />
+</head>
+
+<script src="https://use.fontawesome.com/8e8378f739.js"></script>
+
+
+<body>
+  <header>
+    <div class="contenedor">
+      <h1>Economia</h1>
+      <input type="checkbox" name="" id="menu_bar">
+      <label class="fas fa-bars" for="menu_bar"></label>
+      <nav class="menu">
+        <a href="#banner"><i class="fas fa-home"></i>Inicio</a>
+        <a href="#bienvenidos"><i class="fas fa-comment-medical"></i>Consejos</a>
+        <a href="#gastos"><i class="far fa-money-bill-alt"></i>Gastos fijos</a>
+        <a href="#contador"><i class="fas fa-money-check-alt"></i>Ahorrar</a>
+        <a href="#contactos"><i class="fas fa-id-card"></i>contactos</a>
+
+
+
+      </nav>
+
+  </header>
+
+  <body>
+    <main>
+      <section id="banner">
+        <img class="banner" src="imagenes/banner2.jpg" alt="">
+        <div class="contenedor">
+          
+          <a href="https://es.wikipedia.org/wiki/Rock">Leer mas</a>
+
+        </div>
+    </main>
+    </div>
+    </section>
+    <section id="bienvenidos">
+      <h2>bienvenidos a nuestro sitio web</h2>
+      <p>La economía se centra en el comportamiento de los individuos, su interacción ante determinados sucesos y el
+        efecto que producen en su entorno. Por ejemplo, el efecto que producen en los precios, la producción, la riqueza
+        o el consumo, entre otros. Es una ciencia social porque estudia la actividad y comportamiento humanos, que es un
+        objeto de estudio altamente dinámico. Los humanos somos impredecibles.</p>
+
+    </section>
+
+    <div class="contenedor-carrucel">
+      <div class="imagen actual">
+        <img src="imagenes2/img1.jpg" alt="" />
+        <div class="texto">No gastes tus ahorras por cualquier cosa</div>
+      </div>
+      <div class="imagen">
+        <img src="imagenes2/img2.jpg" alt="" />
+        <div class="texto">Se una persona organizada con tu dinero y cosas</div>
+      </div>
+      <div class="imagen">
+        <img src="imagenes2/img3.jpg" alt="" />
+        <div class="texto">Invierte tu tiempo y se mas productivo</div>
+      </div>
+      <div class="imagen">
+        <img src="imagenes2/img4.jpg" alt="" width="300px" height="150px" />
+        <div class="texto">Si tu finanzas bajan busca la forma de solucionarlo !no te rindas¡</div>
+      </div>
+      <a class="anterior" onclick="anterior()">&#10094;</a>
+      <a class="siguiente" onclick="siguiente()">&#10095;</a>
+      <div class="puntos">
+        <span class="punto activo" onclick="mostrar(0)"></span>
+        <span class="punto" onclick="mostrar(1)"></span>
+        <span class="punto" onclick="mostrar(2)"></span>
+        <span class="punto" onclick="mostrar(3)"></span>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="gastos">
+      <div class="clase">
+        <h2>Inserte sus datos</h2>
+        <div class="adentro">
+          <p>Gastos fijos</p>
+
+          <div class="inputs">
+            <p>inserte:</p>
+            <input type="number" placeholder="Luz" id="luz">
+            <p>inserte:</p>
+            <input type="number" placeholder="Agua" id="agua">
+            <p>inserte:</p>
+            <input type="number" placeholder="cable" id="cable">
+            <p>inserte:</p>
+            <input type="number" placeholder="internet" id="internet">
+            <br>
+            <p>inserte:</p>
+            <input type="number" placeholder="Sus Ingresos" id="ingresos">
+
+          </div>
+          <br>
+          <button onclick="calcular()">calcular</button>
+          
+          <div id="tabla">
+
+            <!-- aling center para centrar las letras en la tabla -->
+            <table cellpadding="5px">
+              <!-- borde para el borde de la tabla -->
+              <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
+              <!-- esto sirve para separar los margenes hacia los lados -->
+
+              <tr>
+                <td colspan="3px" align="center">Porcentaje Gastos Mensuales</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Luz</p>
+
+                </td>
+
+                <td id="luz1">
+                  <p></p>
+                </td>
+
+
+
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>Agua</p>
+                </td>
+
+                <td id="agua1">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>cable</p>
+                </td>
+
+                <td id="cable1">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>internet</p>
+                </td>
+
+                <td id="inter1">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>total</p>
+                </td>
+
+                <td id="total1">
+
+                  <p></p>
+                </td>
+              </tr>
+          </div>
+
+          </table>
+          <br>
+
+          <div id="tabla">
+
+            <!-- aling center para centrar las letras en la tabla -->
+            <table cellpadding="5px">
+              <!-- borde para el borde de la tabla -->
+              <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
+              <!-- esto sirve para separar los margenes hacia los lados -->
+
+              <tr>
+                <td colspan="3px" align="center">Gastos anuales</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Luz</p>
+
+                </td>
+
+                <td id="luz2">
+                  <p></p>
+                </td>
+
+
+
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>Agua</p>
+                </td>
+
+                <td id="agua2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>cable</p>
+                </td>
+
+                <td id="cable2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>internet</p>
+                </td>
+
+                <td id="inter2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>
+
+                  <p>total</p>
+                </td>
+
+                <td id="total2">
+
+                  <p></p>
+                </td>
+              </tr>
+          </div>
+
+          </table>
+          <br>
+          <div id="tabla">
+
+            <!-- aling center para centrar las letras en la tabla -->
+            <table cellpadding="5px">
+              <!-- borde para el borde de la tabla -->
+              <!-- aqui se utiliza el igual pero si fuera css se utiliza dos puntos -->
+              <!-- esto sirve para separar los margenes hacia los lados -->
+
+              <tr>
+                <td colspan="3px" align="center">Distribución de salario</td>
+              </tr>
+              <tr>
+                <td id="gastosf">
+                  <p>gastos fijos</p>
+
+                </td>
+
+                <td id="gastosf2">
+                  <p></p>
+                </td>
+
+
+
+              </tr>
+              <!--  -->
+              <tr>
+                <td id="alimentacion">
+
+                  <p>Alimentacion 35%</p>
+                </td>
+
+                <td id="alimentacion2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td id="salud">
+
+                  <p>Salud 20%</p>
+                </td>
+
+                <td id="salud2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td id="entretenimiento">
+
+                  <p>Entretenimiento 15%</p>
+                </td>
+
+                <td id="entretenimiento2">
+
+                  <p></p>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td id="ahorro">
+
+                  <p>Ahorro 5%</p>
+                </td>
+
+                <td id="ahorro2">
+
+                  <p></p>
+                </td>
+              </tr>
+              </tr>
+              <!--  -->
+              <tr>
+                <td id="gastosi">
+
+                  <p>gastos imprevistos 25%</p>
+                </td>
+
+                <td id="gastosi2">
+
+                  <p></p>
+                </td>
+              </tr>
+          </div>
+
+          </table>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      </div>
+
+    </section>
+
+
+    </section>
+    <br>
+    <br>
+    <div id="contador" class="contador parallax">
+      <ul class="resumen-evento">
+
+        <li class="ahorrar">
+          <p class="numero ">Ahorrar:</p>Es el camino de la estabilidad economica
+        </li>
+
+
+
+      </ul>
+
+    </div>
+    <br><br><br><br>
+    <div id="contactos">
+      <div class="cuadro">
+        <div class="carta">
+          <img class="Isabella" src="imagenes/Isabella.jpg" alt="" />
+          <div class="contenedor1">
+            <h2>Isabella Aguilar Calvo</h2>
+            <br>
+            <p>Soy estudiante de cedes y tendo 16 años</p>
+            <br>
+            <p class="refran">
+              "el exito no es la clave de la felicidad, la felicidad es la clave
+              del exito"
+              <br>
+            </p>
+            <p>2018079@cedesdonbosco.ed.cr</p>
+            <br>
+            <br>
+            <p class="centrar">contactenos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contenedor">
+        <p class="copy">Economia&copy 2021</p>
+        <div class="sociales">
+          <a class="fab fa-twitter" href="#"></a>
+          <a class="fab fa-facebook" href="#"></a>
+
+          <a class="fab fa-whatsapp" href="#"></a>
+
+          <a class="fas fa-compact-disc" href="#"></a>
+
+
+        </div>
+
+
+      </div>
+    </footer>
+
+  </body>
+  <script src="js/carrucel.js"></script>
+  <script src="js/economia.js"></script>
+
+</html>
